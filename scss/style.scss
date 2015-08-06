@@ -2,6 +2,8 @@ $segment-color: red;
 $segment-off: transparent;
 
 @import 'segments';
+@import 'transitions';
+
 body{ background: black; }
 .clock{
 	width: 800px;
@@ -32,7 +34,6 @@ body{ background: black; }
 		@import 'seven';
 		@import 'eight';
 		@import 'nine';
-		@import 'transitions';
 	}
 }
 
