@@ -1,0 +1,11 @@
+.top-bar,
+.mid-bar,
+.bottom-bar,
+.top-left,
+.bottom-left,
+.top-right,
+.bottom-right { 
+  -webkit-transition: background 0.5s;
+  -moze-transition: background 0.5s;
+  transition: background 0.5s;
+}

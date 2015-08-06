@@ -550,6 +550,51 @@ body {
     .clock #hours-ones.time-9 .bottom-right,
     .clock #hours-tens.time-9 .bottom-right {
       background: red; }
+    .clock #seconds-ones .top-bar,
+    .clock #seconds-ones .mid-bar,
+    .clock #seconds-ones .bottom-bar,
+    .clock #seconds-ones .top-left,
+    .clock #seconds-ones .bottom-left,
+    .clock #seconds-ones .top-right,
+    .clock #seconds-ones .bottom-right,
+    .clock #seconds-tens .top-bar,
+    .clock #seconds-tens .mid-bar,
+    .clock #seconds-tens .bottom-bar,
+    .clock #seconds-tens .top-left,
+    .clock #seconds-tens .bottom-left,
+    .clock #seconds-tens .top-right,
+    .clock #seconds-tens .bottom-right,
+    .clock #minutes-ones .top-bar,
+    .clock #minutes-ones .mid-bar,
+    .clock #minutes-ones .bottom-bar,
+    .clock #minutes-ones .top-left,
+    .clock #minutes-ones .bottom-left,
+    .clock #minutes-ones .top-right,
+    .clock #minutes-ones .bottom-right,
+    .clock #minutes-tens .top-bar,
+    .clock #minutes-tens .mid-bar,
+    .clock #minutes-tens .bottom-bar,
+    .clock #minutes-tens .top-left,
+    .clock #minutes-tens .bottom-left,
+    .clock #minutes-tens .top-right,
+    .clock #minutes-tens .bottom-right,
+    .clock #hours-ones .top-bar,
+    .clock #hours-ones .mid-bar,
+    .clock #hours-ones .bottom-bar,
+    .clock #hours-ones .top-left,
+    .clock #hours-ones .bottom-left,
+    .clock #hours-ones .top-right,
+    .clock #hours-ones .bottom-right,
+    .clock #hours-tens .top-bar,
+    .clock #hours-tens .mid-bar,
+    .clock #hours-tens .bottom-bar,
+    .clock #hours-tens .top-left,
+    .clock #hours-tens .bottom-left,
+    .clock #hours-tens .top-right,
+    .clock #hours-tens .bottom-right {
+      -webkit-transition: background 0.5s;
+      -moze-transition: background 0.5s;
+      transition: background 0.5s; }
 
 .divider {
   display: inline-block;
