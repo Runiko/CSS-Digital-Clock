@@ -1,0 +1,65 @@
+.clock{
+	width: 800px;
+	height: 200px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	background: black;
+
+	#seconds-ones,
+	#seconds-tens,
+	#minutes-ones,
+	#minutes-tens,
+	#hours-ones,
+	#hours-tens{
+		display: inline-block;
+		height: 100%;
+		width: 100px;
+		position: relative;
+	}
+
+	@import 'segments';
+	#seconds-ones,
+	#seconds-tens {	
+		@import 'zero';
+		@import 'one';
+		@import 'two';
+		@import 'three';
+		@import 'four';
+		@import 'five';
+		@import 'six';
+		@import 'seven';
+		@import 'eight';
+		@import 'nine';
+	}
+}
+
+.divider{
+	display: inline-block;
+	width: 26px;
+	height: 200px;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		background: red;
+		left: 3px;
+		top: 20%;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		background: red;
+		left: 3px;
+		top: 70%;
+	}
+}
+
+.labels span{
+	display: inline-block;
+	width: 204px;
+}
