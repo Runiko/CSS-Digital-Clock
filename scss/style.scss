@@ -2,14 +2,14 @@ $segment-color: red;
 $segment-off: transparent;
 
 @import 'segments';
-
+body{ background: black; }
 .clock{
 	width: 800px;
 	height: 200px;
 	margin: 0 auto;
 	text-align: center;
 	position: relative;
-	background: black;
+	background: $segment-off;
 
 	#seconds-ones,
 	#seconds-tens,
@@ -21,11 +21,7 @@ $segment-off: transparent;
 		height: 100%;
 		width: 100px;
 		position: relative;
-	}
 
-
-	#seconds-ones,
-	#seconds-tens {	
 		@import 'zero';
 		@import 'one';
 		@import 'two';
