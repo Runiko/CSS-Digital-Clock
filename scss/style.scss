@@ -1,3 +1,8 @@
+$segment-color: red;
+$segment-off: transparent;
+
+@import 'segments';
+
 .clock{
 	width: 800px;
 	height: 200px;
@@ -18,7 +23,7 @@
 		position: relative;
 	}
 
-	@import 'segments';
+
 	#seconds-ones,
 	#seconds-tens {	
 		@import 'zero';
@@ -44,7 +49,7 @@
 		position: absolute;
 		width: 18px;
 		height: 18px;
-		background: red;
+		background: $segment-color;
 		left: 3px;
 		top: 20%;
 	}
@@ -53,7 +58,7 @@
 		position: absolute;
 		width: 18px;
 		height: 18px;
-		background: red;
+		background: $segment-color;
 		left: 3px;
 		top: 70%;
 	}

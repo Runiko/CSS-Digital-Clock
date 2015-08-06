@@ -1,9 +1,9 @@
 &.time-6 {
-	.top-bar      { background: red; }
-	.mid-bar      { background: red; }
-	.bottom-bar   { background: red; }
-	.top-left     { background: red; }
-	.bottom-left  { background: red; }
-	.top-right    { background: transparent; }
-	.bottom-right { background: red; }
+	.top-bar      { background: $segment-color; }
+	.mid-bar      { background: $segment-color; }
+	.bottom-bar   { background: $segment-color; }
+	.top-left     { background: $segment-color; }
+	.bottom-left  { background: $segment-color; }
+	.top-right    { background: $segment-off; }
+	.bottom-right { background: $segment-color; }
 }

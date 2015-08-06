@@ -3,11 +3,11 @@ Error: Base-level rules cannot contain the parent-selector-referencing character
         on line 1 of scss/four.scss
 
 1: &.time-4 {
-2: 	.top-bar      { background: transparent; }
-3: 	.mid-bar      { background: red; }
-4: 	.bottom-bar   { background: transparent; }
-5: 	.top-left     { background: red; }
-6: 	.bottom-left  { background: transparent; }
+2: 	.top-bar      { background: $segment-off; }
+3: 	.mid-bar      { background: $segment-color; }
+4: 	.bottom-bar   { background: $segment-off; }
+5: 	.top-left     { background: $segment-color; }
+6: 	.bottom-left  { background: $segment-off; }
 
 Backtrace:
 scss/four.scss:1
@@ -50,4 +50,4 @@ scss/four.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Base-level rules cannot contain the parent-selector-referencing character '&'.\A         on line 1 of scss/four.scss\A \A 1: &.time-4 {\A 2: 	.top-bar      { background: transparent; }\A 3: 	.mid-bar      { background: red; }\A 4: 	.bottom-bar   { background: transparent; }\A 5: 	.top-left     { background: red; }\A 6: 	.bottom-left  { background: transparent; }"; }
+  content: "Error: Base-level rules cannot contain the parent-selector-referencing character '&'.\A         on line 1 of scss/four.scss\A \A 1: &.time-4 {\A 2: 	.top-bar      { background: $segment-off; }\A 3: 	.mid-bar      { background: $segment-color; }\A 4: 	.bottom-bar   { background: $segment-off; }\A 5: 	.top-left     { background: $segment-color; }\A 6: 	.bottom-left  { background: $segment-off; }"; }
