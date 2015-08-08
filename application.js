@@ -1,45 +1,44 @@
-// Seconds
-var secondOnes  = document.getElementById("seconds-ones");
-var secondTens  = document.getElementById("seconds-tens");
-// Minutes
-var minutesOnes = document.getElementById('minutes-ones');
-var minutesTens = document.getElementById('minutes-tens');
-// Hours
-var hoursOnes   = document.getElementById('hours-ones');
-var hoursTens   = document.getElementById('hours-tens');
+var Digit = function(el, max, time){
+	this.onesEl = document.getElementById(el + '-ones');
+	this.tensEl = document.getElementById(el + '-tens');
+	this.max    = max;
+	this.time   = time; // Double digit time (not split)
+	this.ones   = this.splitTime()[1];
+	this.tens   = this.splitTime()[0];
+}
+
+Digit.prototype = {
+	singleDigit: function (time) {
+		return time.length == 1 ? '0' + time : time;
+	},
+
+	splitTime: function () {
+		return this.singleDigit(this.time.toString()).split('');
+	}
+}
 
 var date = new Date();
 
-function singleDigit(time) {
-	return time.length == 1 ? '0' + time : time;
+var seconds = new Digit('seconds', 60, date.getSeconds());
+var minutes = new Digit('minutes', 60, date.getMinutes());
+var hours   = new Digit('hours',   12, date.getHours());
+
+function setTime() {
+	seconds.onesEl.className  = 'time-' + seconds.ones;
+	seconds.tensEl.className  = 'time-' + seconds.tens;
+
+	minutes.onesEl.className = 'time-' + minutes.ones;
+	minutes.tensEl.className = 'time-' + minutes.tens;
+
+	hours.onesEl.className   = 'time-' + hours.ones;
+	hours.tensEl.className   = 'time-' + hours.tens;
 }
+setTime();
 
-function splitOnes(time) {
-	return singleDigit(time.toString()).split('')[1];
-}
-
-function splitTens(time) {
-	return singleDigit(time.toString()).split('')[0];
-}
-
-function setTime(date) {
-	secondOnes.className  = 'time-' + splitOnes(date.getSeconds());
-	secondTens.className  = 'time-' + splitTens(date.getSeconds());
-
-	minutesOnes.className = 'time-' + splitOnes(date.getMinutes());
-	minutesTens.className = 'time-' + splitTens(date.getMinutes());
-
-	hoursOnes.className   = 'time-' + splitOnes(date.getHours());
-	hoursTens.className   = 'time-' + splitTens(date.getHours());
-	return splitOnes(date.getSeconds());
-}
-
-
-var num = setTime(date);
+var num = seconds.ones;
 var inter = setInterval(changeTime, 1000);
 
 function changeTime() {
-	var timeClass = 'time-' + num;
-  	secondOnes.className = timeClass;
 	num === 9 ? num = 0 : num++;
+  	seconds.onesEl.className = 'time-' + num;
 }

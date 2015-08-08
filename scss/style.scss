@@ -1,6 +1,14 @@
 $segment-color: red;
 $segment-off: transparent;
 
+$top-bar-color:      $segment-color;
+$mid-bar-color:      $segment-color;
+$bottom-bar-color:   $segment-color;
+$top-left-color:     $segment-color;
+$bottom-left-color:  $segment-color;
+$top-right-color:    $segment-color;
+$bottom-right-color: $segment-color;
+
 @import 'segments';
 @import 'transitions';
 
