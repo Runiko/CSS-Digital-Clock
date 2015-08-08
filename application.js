@@ -1,19 +1,32 @@
 var Digit = function(el, max, time){
 	this.onesEl = document.getElementById(el + '-ones');
 	this.tensEl = document.getElementById(el + '-tens');
-	this.max    = max;
+	this.max    = max - 1;
 	this.time   = time; // Double digit time (not split)
-	this.ones   = this.splitTime()[1];
-	this.tens   = this.splitTime()[0];
 }
 
 Digit.prototype = {
-	singleDigit: function (time) {
+	padSingleDigit: function (time) {
 		return time.length == 1 ? '0' + time : time;
 	},
 
 	splitTime: function () {
-		return this.singleDigit(this.time.toString()).split('');
+		return this.padSingleDigit(this.time.toString()).split('');
+	},
+
+	changeTime: function() {
+		if (this.time >= this.max) {
+			this.time = 0;
+		} else {
+			this.time++;
+		}
+		this.render();
+		return this.time;
+	},
+
+	render: function() {
+		this.onesEl.className = 'time-' + this.splitTime()[1];
+		this.tensEl.className = 'time-' + this.splitTime()[0];
 	}
 }
 
@@ -21,24 +34,21 @@ var date = new Date();
 
 var seconds = new Digit('seconds', 60, date.getSeconds());
 var minutes = new Digit('minutes', 60, date.getMinutes());
-var hours   = new Digit('hours',   12, date.getHours());
+var hours   = new Digit('hours',   12, date.getHours() - 12);
 
-function setTime() {
-	seconds.onesEl.className  = 'time-' + seconds.ones;
-	seconds.tensEl.className  = 'time-' + seconds.tens;
-
-	minutes.onesEl.className = 'time-' + minutes.ones;
-	minutes.tensEl.className = 'time-' + minutes.tens;
-
-	hours.onesEl.className   = 'time-' + hours.ones;
-	hours.tensEl.className   = 'time-' + hours.tens;
+function checkTimes() {
+	if (seconds.changeTime() == 0) {
+		if (minutes.changeTime() == 0) {
+			hours.changeTime();
+		}
+	}
 }
-setTime();
 
-var num = seconds.ones;
-var inter = setInterval(changeTime, 1000);
+function init() {
+	seconds.render();
+	minutes.render();
+	hours.render();
 
-function changeTime() {
-	num === 9 ? num = 0 : num++;
-  	seconds.onesEl.className = 'time-' + num;
+	setInterval(checkTimes, 1000);
 }
+init();
