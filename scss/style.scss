@@ -1,4 +1,4 @@
-$segment-color: red;
+$segment-color: white;
 $segment-off: transparent;
 
 $top-bar-color:      $segment-color;
@@ -14,12 +14,15 @@ $bottom-right-color: $segment-color;
 
 body{ background: black; }
 .clock{
-	width: 800px;
 	height: 200px;
-	margin: 0 auto;
+	margin-top: 250px;
 	text-align: center;
 	position: relative;
 	background: $segment-off;
+
+	& > div, & > div + div {
+		margin-right: 20px;
+	}
 
 	#seconds-ones,
 	#seconds-tens,

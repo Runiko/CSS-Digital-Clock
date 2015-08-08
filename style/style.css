@@ -11,7 +11,7 @@
   top: 0%; }
 
 .mid-bar {
-  top: 50%; }
+  top: 47%; }
 
 .bottom-bar {
   bottom: 0; }
@@ -49,20 +49,21 @@
 .bottom-left,
 .top-right,
 .bottom-right {
-  -webkit-transition: background 0.5s;
-  -moze-transition: background 0.5s;
-  transition: background 0.5s; }
+  -webkit-transition: background 0.15s;
+  -moze-transition: background 0.15s;
+  transition: background 0.15s; }
 
 body {
   background: black; }
 
 .clock {
-  width: 800px;
   height: 200px;
-  margin: 0 auto;
+  margin-top: 250px;
   text-align: center;
   position: relative;
   background: transparent; }
+  .clock > div, .clock > div + div {
+    margin-right: 20px; }
   .clock #seconds-ones,
   .clock #seconds-tens,
   .clock #minutes-ones,
@@ -79,7 +80,7 @@ body {
     .clock #minutes-tens.time-0 .top-bar,
     .clock #hours-ones.time-0 .top-bar,
     .clock #hours-tens.time-0 .top-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-0 .mid-bar,
     .clock #seconds-tens.time-0 .mid-bar,
     .clock #minutes-ones.time-0 .mid-bar,
@@ -93,35 +94,35 @@ body {
     .clock #minutes-tens.time-0 .bottom-bar,
     .clock #hours-ones.time-0 .bottom-bar,
     .clock #hours-tens.time-0 .bottom-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-0 .top-left,
     .clock #seconds-tens.time-0 .top-left,
     .clock #minutes-ones.time-0 .top-left,
     .clock #minutes-tens.time-0 .top-left,
     .clock #hours-ones.time-0 .top-left,
     .clock #hours-tens.time-0 .top-left {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-0 .bottom-left,
     .clock #seconds-tens.time-0 .bottom-left,
     .clock #minutes-ones.time-0 .bottom-left,
     .clock #minutes-tens.time-0 .bottom-left,
     .clock #hours-ones.time-0 .bottom-left,
     .clock #hours-tens.time-0 .bottom-left {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-0 .top-right,
     .clock #seconds-tens.time-0 .top-right,
     .clock #minutes-ones.time-0 .top-right,
     .clock #minutes-tens.time-0 .top-right,
     .clock #hours-ones.time-0 .top-right,
     .clock #hours-tens.time-0 .top-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-0 .bottom-right,
     .clock #seconds-tens.time-0 .bottom-right,
     .clock #minutes-ones.time-0 .bottom-right,
     .clock #minutes-tens.time-0 .bottom-right,
     .clock #hours-ones.time-0 .bottom-right,
     .clock #hours-tens.time-0 .bottom-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-1 .top-bar,
     .clock #seconds-tens.time-1 .top-bar,
     .clock #minutes-ones.time-1 .top-bar,
@@ -163,35 +164,35 @@ body {
     .clock #minutes-tens.time-1 .top-right,
     .clock #hours-ones.time-1 .top-right,
     .clock #hours-tens.time-1 .top-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-1 .bottom-right,
     .clock #seconds-tens.time-1 .bottom-right,
     .clock #minutes-ones.time-1 .bottom-right,
     .clock #minutes-tens.time-1 .bottom-right,
     .clock #hours-ones.time-1 .bottom-right,
     .clock #hours-tens.time-1 .bottom-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-2 .top-bar,
     .clock #seconds-tens.time-2 .top-bar,
     .clock #minutes-ones.time-2 .top-bar,
     .clock #minutes-tens.time-2 .top-bar,
     .clock #hours-ones.time-2 .top-bar,
     .clock #hours-tens.time-2 .top-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-2 .mid-bar,
     .clock #seconds-tens.time-2 .mid-bar,
     .clock #minutes-ones.time-2 .mid-bar,
     .clock #minutes-tens.time-2 .mid-bar,
     .clock #hours-ones.time-2 .mid-bar,
     .clock #hours-tens.time-2 .mid-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-2 .bottom-bar,
     .clock #seconds-tens.time-2 .bottom-bar,
     .clock #minutes-ones.time-2 .bottom-bar,
     .clock #minutes-tens.time-2 .bottom-bar,
     .clock #hours-ones.time-2 .bottom-bar,
     .clock #hours-tens.time-2 .bottom-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-2 .top-left,
     .clock #seconds-tens.time-2 .top-left,
     .clock #minutes-ones.time-2 .top-left,
@@ -205,14 +206,14 @@ body {
     .clock #minutes-tens.time-2 .bottom-left,
     .clock #hours-ones.time-2 .bottom-left,
     .clock #hours-tens.time-2 .bottom-left {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-2 .top-right,
     .clock #seconds-tens.time-2 .top-right,
     .clock #minutes-ones.time-2 .top-right,
     .clock #minutes-tens.time-2 .top-right,
     .clock #hours-ones.time-2 .top-right,
     .clock #hours-tens.time-2 .top-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-2 .bottom-right,
     .clock #seconds-tens.time-2 .bottom-right,
     .clock #minutes-ones.time-2 .bottom-right,
@@ -226,21 +227,21 @@ body {
     .clock #minutes-tens.time-3 .top-bar,
     .clock #hours-ones.time-3 .top-bar,
     .clock #hours-tens.time-3 .top-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-3 .mid-bar,
     .clock #seconds-tens.time-3 .mid-bar,
     .clock #minutes-ones.time-3 .mid-bar,
     .clock #minutes-tens.time-3 .mid-bar,
     .clock #hours-ones.time-3 .mid-bar,
     .clock #hours-tens.time-3 .mid-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-3 .bottom-bar,
     .clock #seconds-tens.time-3 .bottom-bar,
     .clock #minutes-ones.time-3 .bottom-bar,
     .clock #minutes-tens.time-3 .bottom-bar,
     .clock #hours-ones.time-3 .bottom-bar,
     .clock #hours-tens.time-3 .bottom-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-3 .top-left,
     .clock #seconds-tens.time-3 .top-left,
     .clock #minutes-ones.time-3 .top-left,
@@ -261,14 +262,14 @@ body {
     .clock #minutes-tens.time-3 .top-right,
     .clock #hours-ones.time-3 .top-right,
     .clock #hours-tens.time-3 .top-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-3 .bottom-right,
     .clock #seconds-tens.time-3 .bottom-right,
     .clock #minutes-ones.time-3 .bottom-right,
     .clock #minutes-tens.time-3 .bottom-right,
     .clock #hours-ones.time-3 .bottom-right,
     .clock #hours-tens.time-3 .bottom-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-4 .top-bar,
     .clock #seconds-tens.time-4 .top-bar,
     .clock #minutes-ones.time-4 .top-bar,
@@ -282,7 +283,7 @@ body {
     .clock #minutes-tens.time-4 .mid-bar,
     .clock #hours-ones.time-4 .mid-bar,
     .clock #hours-tens.time-4 .mid-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-4 .bottom-bar,
     .clock #seconds-tens.time-4 .bottom-bar,
     .clock #minutes-ones.time-4 .bottom-bar,
@@ -296,7 +297,7 @@ body {
     .clock #minutes-tens.time-4 .top-left,
     .clock #hours-ones.time-4 .top-left,
     .clock #hours-tens.time-4 .top-left {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-4 .bottom-left,
     .clock #seconds-tens.time-4 .bottom-left,
     .clock #minutes-ones.time-4 .bottom-left,
@@ -310,42 +311,42 @@ body {
     .clock #minutes-tens.time-4 .top-right,
     .clock #hours-ones.time-4 .top-right,
     .clock #hours-tens.time-4 .top-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-4 .bottom-right,
     .clock #seconds-tens.time-4 .bottom-right,
     .clock #minutes-ones.time-4 .bottom-right,
     .clock #minutes-tens.time-4 .bottom-right,
     .clock #hours-ones.time-4 .bottom-right,
     .clock #hours-tens.time-4 .bottom-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-5 .top-bar,
     .clock #seconds-tens.time-5 .top-bar,
     .clock #minutes-ones.time-5 .top-bar,
     .clock #minutes-tens.time-5 .top-bar,
     .clock #hours-ones.time-5 .top-bar,
     .clock #hours-tens.time-5 .top-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-5 .mid-bar,
     .clock #seconds-tens.time-5 .mid-bar,
     .clock #minutes-ones.time-5 .mid-bar,
     .clock #minutes-tens.time-5 .mid-bar,
     .clock #hours-ones.time-5 .mid-bar,
     .clock #hours-tens.time-5 .mid-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-5 .bottom-bar,
     .clock #seconds-tens.time-5 .bottom-bar,
     .clock #minutes-ones.time-5 .bottom-bar,
     .clock #minutes-tens.time-5 .bottom-bar,
     .clock #hours-ones.time-5 .bottom-bar,
     .clock #hours-tens.time-5 .bottom-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-5 .top-left,
     .clock #seconds-tens.time-5 .top-left,
     .clock #minutes-ones.time-5 .top-left,
     .clock #minutes-tens.time-5 .top-left,
     .clock #hours-ones.time-5 .top-left,
     .clock #hours-tens.time-5 .top-left {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-5 .bottom-left,
     .clock #seconds-tens.time-5 .bottom-left,
     .clock #minutes-ones.time-5 .bottom-left,
@@ -366,42 +367,42 @@ body {
     .clock #minutes-tens.time-5 .bottom-right,
     .clock #hours-ones.time-5 .bottom-right,
     .clock #hours-tens.time-5 .bottom-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-6 .top-bar,
     .clock #seconds-tens.time-6 .top-bar,
     .clock #minutes-ones.time-6 .top-bar,
     .clock #minutes-tens.time-6 .top-bar,
     .clock #hours-ones.time-6 .top-bar,
     .clock #hours-tens.time-6 .top-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-6 .mid-bar,
     .clock #seconds-tens.time-6 .mid-bar,
     .clock #minutes-ones.time-6 .mid-bar,
     .clock #minutes-tens.time-6 .mid-bar,
     .clock #hours-ones.time-6 .mid-bar,
     .clock #hours-tens.time-6 .mid-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-6 .bottom-bar,
     .clock #seconds-tens.time-6 .bottom-bar,
     .clock #minutes-ones.time-6 .bottom-bar,
     .clock #minutes-tens.time-6 .bottom-bar,
     .clock #hours-ones.time-6 .bottom-bar,
     .clock #hours-tens.time-6 .bottom-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-6 .top-left,
     .clock #seconds-tens.time-6 .top-left,
     .clock #minutes-ones.time-6 .top-left,
     .clock #minutes-tens.time-6 .top-left,
     .clock #hours-ones.time-6 .top-left,
     .clock #hours-tens.time-6 .top-left {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-6 .bottom-left,
     .clock #seconds-tens.time-6 .bottom-left,
     .clock #minutes-ones.time-6 .bottom-left,
     .clock #minutes-tens.time-6 .bottom-left,
     .clock #hours-ones.time-6 .bottom-left,
     .clock #hours-tens.time-6 .bottom-left {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-6 .top-right,
     .clock #seconds-tens.time-6 .top-right,
     .clock #minutes-ones.time-6 .top-right,
@@ -415,14 +416,14 @@ body {
     .clock #minutes-tens.time-6 .bottom-right,
     .clock #hours-ones.time-6 .bottom-right,
     .clock #hours-tens.time-6 .bottom-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-7 .top-bar,
     .clock #seconds-tens.time-7 .top-bar,
     .clock #minutes-ones.time-7 .top-bar,
     .clock #minutes-tens.time-7 .top-bar,
     .clock #hours-ones.time-7 .top-bar,
     .clock #hours-tens.time-7 .top-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-7 .mid-bar,
     .clock #seconds-tens.time-7 .mid-bar,
     .clock #minutes-ones.time-7 .mid-bar,
@@ -457,91 +458,91 @@ body {
     .clock #minutes-tens.time-7 .top-right,
     .clock #hours-ones.time-7 .top-right,
     .clock #hours-tens.time-7 .top-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-7 .bottom-right,
     .clock #seconds-tens.time-7 .bottom-right,
     .clock #minutes-ones.time-7 .bottom-right,
     .clock #minutes-tens.time-7 .bottom-right,
     .clock #hours-ones.time-7 .bottom-right,
     .clock #hours-tens.time-7 .bottom-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-8 .top-bar,
     .clock #seconds-tens.time-8 .top-bar,
     .clock #minutes-ones.time-8 .top-bar,
     .clock #minutes-tens.time-8 .top-bar,
     .clock #hours-ones.time-8 .top-bar,
     .clock #hours-tens.time-8 .top-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-8 .mid-bar,
     .clock #seconds-tens.time-8 .mid-bar,
     .clock #minutes-ones.time-8 .mid-bar,
     .clock #minutes-tens.time-8 .mid-bar,
     .clock #hours-ones.time-8 .mid-bar,
     .clock #hours-tens.time-8 .mid-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-8 .bottom-bar,
     .clock #seconds-tens.time-8 .bottom-bar,
     .clock #minutes-ones.time-8 .bottom-bar,
     .clock #minutes-tens.time-8 .bottom-bar,
     .clock #hours-ones.time-8 .bottom-bar,
     .clock #hours-tens.time-8 .bottom-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-8 .top-left,
     .clock #seconds-tens.time-8 .top-left,
     .clock #minutes-ones.time-8 .top-left,
     .clock #minutes-tens.time-8 .top-left,
     .clock #hours-ones.time-8 .top-left,
     .clock #hours-tens.time-8 .top-left {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-8 .bottom-left,
     .clock #seconds-tens.time-8 .bottom-left,
     .clock #minutes-ones.time-8 .bottom-left,
     .clock #minutes-tens.time-8 .bottom-left,
     .clock #hours-ones.time-8 .bottom-left,
     .clock #hours-tens.time-8 .bottom-left {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-8 .top-right,
     .clock #seconds-tens.time-8 .top-right,
     .clock #minutes-ones.time-8 .top-right,
     .clock #minutes-tens.time-8 .top-right,
     .clock #hours-ones.time-8 .top-right,
     .clock #hours-tens.time-8 .top-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-8 .bottom-right,
     .clock #seconds-tens.time-8 .bottom-right,
     .clock #minutes-ones.time-8 .bottom-right,
     .clock #minutes-tens.time-8 .bottom-right,
     .clock #hours-ones.time-8 .bottom-right,
     .clock #hours-tens.time-8 .bottom-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-9 .top-bar,
     .clock #seconds-tens.time-9 .top-bar,
     .clock #minutes-ones.time-9 .top-bar,
     .clock #minutes-tens.time-9 .top-bar,
     .clock #hours-ones.time-9 .top-bar,
     .clock #hours-tens.time-9 .top-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-9 .mid-bar,
     .clock #seconds-tens.time-9 .mid-bar,
     .clock #minutes-ones.time-9 .mid-bar,
     .clock #minutes-tens.time-9 .mid-bar,
     .clock #hours-ones.time-9 .mid-bar,
     .clock #hours-tens.time-9 .mid-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-9 .bottom-bar,
     .clock #seconds-tens.time-9 .bottom-bar,
     .clock #minutes-ones.time-9 .bottom-bar,
     .clock #minutes-tens.time-9 .bottom-bar,
     .clock #hours-ones.time-9 .bottom-bar,
     .clock #hours-tens.time-9 .bottom-bar {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-9 .top-left,
     .clock #seconds-tens.time-9 .top-left,
     .clock #minutes-ones.time-9 .top-left,
     .clock #minutes-tens.time-9 .top-left,
     .clock #hours-ones.time-9 .top-left,
     .clock #hours-tens.time-9 .top-left {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-9 .bottom-left,
     .clock #seconds-tens.time-9 .bottom-left,
     .clock #minutes-ones.time-9 .bottom-left,
@@ -555,14 +556,14 @@ body {
     .clock #minutes-tens.time-9 .top-right,
     .clock #hours-ones.time-9 .top-right,
     .clock #hours-tens.time-9 .top-right {
-      background: red; }
+      background: white; }
     .clock #seconds-ones.time-9 .bottom-right,
     .clock #seconds-tens.time-9 .bottom-right,
     .clock #minutes-ones.time-9 .bottom-right,
     .clock #minutes-tens.time-9 .bottom-right,
     .clock #hours-ones.time-9 .bottom-right,
     .clock #hours-tens.time-9 .bottom-right {
-      background: red; }
+      background: white; }
 
 .divider {
   display: inline-block;
@@ -574,7 +575,7 @@ body {
     position: absolute;
     width: 18px;
     height: 18px;
-    background: red;
+    background: white;
     left: 3px;
     top: 20%; }
   .divider:after {
@@ -582,7 +583,7 @@ body {
     position: absolute;
     width: 18px;
     height: 18px;
-    background: red;
+    background: white;
     left: 3px;
     top: 70%; }
 

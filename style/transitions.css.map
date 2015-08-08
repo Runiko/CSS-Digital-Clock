@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA;;;;;;aAMc;EACZ,kBAAkB,EAAE,eAAe;EACnC,gBAAgB,EAAI,eAAe;EACnC,UAAU,EAAU,eAAe",
+"mappings": "AAAA;;;;;;aAMc;EACZ,kBAAkB,EAAE,gBAAgB;EACpC,gBAAgB,EAAI,gBAAgB;EACpC,UAAU,EAAU,gBAAgB",
 "sources": ["../scss/transitions.scss"],
 "names": [],
 "file": "transitions.css"
