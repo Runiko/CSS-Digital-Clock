@@ -42,14 +42,14 @@ function checkTimes() {
 			hours.changeTime();
 		}
 	}
+	setTimeout(checkTimes, 1000);
 }
 
 function init() {
 	seconds.render();
 	minutes.render();
 	hours.render();
-
-	setInterval(checkTimes, 1000);
+	checkTimes();
 }
 
 var date    = new Date();

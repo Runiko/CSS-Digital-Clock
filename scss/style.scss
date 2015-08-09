@@ -9,6 +9,9 @@ $bottom-left-color:  $segment-color;
 $top-right-color:    $segment-color;
 $bottom-right-color: $segment-color;
 
+$digit-width: 100px;
+$segment-width: 12px;
+
 @import 'segments';
 @import 'transitions';
 
@@ -32,7 +35,7 @@ body{ background: black; }
 	#hours-tens{
 		display: inline-block;
 		height: 100%;
-		width: 100px;
+		width: $digit-width;
 		position: relative;
 
 		@import 'zero';

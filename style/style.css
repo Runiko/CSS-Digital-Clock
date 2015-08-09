@@ -1,9 +1,9 @@
 .top-bar,
 .mid-bar,
 .bottom-bar {
-  width: 100%;
+  width: 76px;
   height: 12px;
-  left: 0;
+  left: 12px;
   background: black;
   position: absolute; }
 
@@ -41,6 +41,15 @@
 
 .bottom-right {
   right: 0; }
+
+.top-bar,
+.mid-bar,
+.bottom-bar,
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
+  /*border-radius: 10px;*/ }
 
 .top-bar,
 .mid-bar,
