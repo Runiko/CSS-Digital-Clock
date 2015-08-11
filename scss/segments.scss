@@ -21,13 +21,14 @@
   position: absolute;
 }
 
+$radius: 10px;
 .top-left, .top-right { top: 0; }
-.top-left  { left:  0; }
-.top-right { right: 0; }
+.top-left  { left:  0; border-top-left-radius: $radius; }
+.top-right { right: 0; border-top-right-radius: $radius; }
 
 .bottom-left, .bottom-right { bottom: 0; }
-.bottom-left  { left:   0;}
-.bottom-right { right:  0; }
+.bottom-left  { left:   0; border-bottom-left-radius: $radius; }
+.bottom-right { right:  0; border-bottom-right-radius: $radius; }
 
 .top-bar,
 .mid-bar,

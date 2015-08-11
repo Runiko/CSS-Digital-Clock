@@ -28,19 +28,23 @@
   top: 0; }
 
 .top-left {
-  left: 0; }
+  left: 0;
+  border-top-left-radius: 10px; }
 
 .top-right {
-  right: 0; }
+  right: 0;
+  border-top-right-radius: 10px; }
 
 .bottom-left, .bottom-right {
   bottom: 0; }
 
 .bottom-left {
-  left: 0; }
+  left: 0;
+  border-bottom-left-radius: 10px; }
 
 .bottom-right {
-  right: 0; }
+  right: 0;
+  border-bottom-right-radius: 10px; }
 
 .top-bar,
 .mid-bar,
