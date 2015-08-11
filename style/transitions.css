@@ -9,4 +9,9 @@
   -moze-transition: background 0.15s;
   transition: background 0.15s; }
 
+#body {
+  -webkit-transition: background 5.0s;
+  -moze-transition: background 5.0s;
+  transition: background 5.0s; }
+
 /*# sourceMappingURL=transitions.css.map */

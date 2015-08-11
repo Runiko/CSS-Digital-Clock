@@ -14,42 +14,35 @@ Digit.prototype = {
 		return this.padSingleDigit(this.time.toString()).split('');
 	},
 
-	changeTime: function() {
-		if (this.time >= this.max) {
-			this.time = 0;
-		} else {
-			this.time++;
-		}
-		this.render();
-		return this.time;
-	},
-
-	render: function() {
+	render: function(time) {
+		this.time = time;
 		this.onesEl.className = 'time-' + this.splitTime()[1];
 		this.tensEl.className = 'time-' + this.splitTime()[0];
 	}
 }
 
-function changeBackground() {
+function hexTimeBackground() {
 	var hex = '#' + hours.splitTime().join('') + minutes.splitTime().join('') + seconds.splitTime().join('');
 	body.style.background = hex;
 }
 
-function checkTimes() {
-	changeBackground();
-	if (seconds.changeTime() == 0) {
-		if (minutes.changeTime() == 0) {
-			hours.changeTime();
-		}
+function randomBackground () {
+	var hexVars = 'abcdef0123456789';
+	var bg = [];
+	for(var i = 0; i < 6; i++) {
+		bg.push(hexVars[Math.floor(Math.random() * (15 + 1))]);
 	}
-	setTimeout(checkTimes, 1000);
+	return bg = '#' + bg.join('').toUpperCase();
+	// document.getElementById('hex-color').innerText = bg;
 }
 
 function init() {
-	seconds.render();
-	minutes.render();
-	hours.render();
-	checkTimes();
+	var date    = new Date();
+	body.style.background = randomBackground();
+	seconds.render(date.getSeconds());
+	minutes.render(date.getMinutes());
+	hours.render(date.getHours() - 12);
+	setTimeout(init, 1000);
 }
 
 var date    = new Date();

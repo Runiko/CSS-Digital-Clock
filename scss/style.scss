@@ -15,6 +15,7 @@ $segment-width: 12px;
 @import 'segments';
 @import 'transitions';
 
+#hex-color { font-family: courier; }
 body{ background: black; }
 .clock{
 	height: 200px;
