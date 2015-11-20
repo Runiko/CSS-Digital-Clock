@@ -1,0 +1,615 @@
+.top-bar,
+.mid-bar,
+.bottom-bar {
+  width: 76px;
+  height: 12px;
+  left: 12px;
+  background: black;
+  position: absolute; }
+
+.top-bar {
+  top: 0%; }
+
+.mid-bar {
+  top: 47%; }
+
+.bottom-bar {
+  bottom: 0; }
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
+  width: 12px;
+  height: 50%;
+  position: absolute; }
+
+.top-left, .top-right {
+  top: 0; }
+
+.top-left {
+  left: 0;
+  border-top-left-radius: 10px; }
+
+.top-right {
+  right: 0;
+  border-top-right-radius: 10px; }
+
+.bottom-left, .bottom-right {
+  bottom: 0; }
+
+.bottom-left {
+  left: 0;
+  border-bottom-left-radius: 10px; }
+
+.bottom-right {
+  right: 0;
+  border-bottom-right-radius: 10px; }
+
+.top-bar,
+.mid-bar,
+.bottom-bar,
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
+  /*border-radius: 10px;*/ }
+
+.top-bar,
+.mid-bar,
+.bottom-bar,
+.top-left,
+.bottom-left,
+.top-right,
+.bottom-right {
+  -webkit-transition: background 0.15s;
+  -moze-transition: background 0.15s;
+  transition: background 0.15s; }
+
+#body {
+  -webkit-transition: background 5.0s;
+  -moze-transition: background 5.0s;
+  transition: background 5.0s; }
+
+#hex-color {
+  font-family: courier; }
+
+body {
+  background: black; }
+
+.clock {
+  height: 200px;
+  margin-top: 250px;
+  text-align: center;
+  position: relative;
+  background: transparent; }
+  .clock > div, .clock > div + div {
+    margin-right: 20px; }
+  .clock #seconds-ones,
+  .clock #seconds-tens,
+  .clock #minutes-ones,
+  .clock #minutes-tens,
+  .clock #hours-ones,
+  .clock #hours-tens {
+    display: inline-block;
+    height: 100%;
+    width: 100px;
+    position: relative; }
+    .clock #seconds-ones.time-0 .top-bar,
+    .clock #seconds-tens.time-0 .top-bar,
+    .clock #minutes-ones.time-0 .top-bar,
+    .clock #minutes-tens.time-0 .top-bar,
+    .clock #hours-ones.time-0 .top-bar,
+    .clock #hours-tens.time-0 .top-bar {
+      background: white; }
+    .clock #seconds-ones.time-0 .mid-bar,
+    .clock #seconds-tens.time-0 .mid-bar,
+    .clock #minutes-ones.time-0 .mid-bar,
+    .clock #minutes-tens.time-0 .mid-bar,
+    .clock #hours-ones.time-0 .mid-bar,
+    .clock #hours-tens.time-0 .mid-bar {
+      background: transparent; }
+    .clock #seconds-ones.time-0 .bottom-bar,
+    .clock #seconds-tens.time-0 .bottom-bar,
+    .clock #minutes-ones.time-0 .bottom-bar,
+    .clock #minutes-tens.time-0 .bottom-bar,
+    .clock #hours-ones.time-0 .bottom-bar,
+    .clock #hours-tens.time-0 .bottom-bar {
+      background: white; }
+    .clock #seconds-ones.time-0 .top-left,
+    .clock #seconds-tens.time-0 .top-left,
+    .clock #minutes-ones.time-0 .top-left,
+    .clock #minutes-tens.time-0 .top-left,
+    .clock #hours-ones.time-0 .top-left,
+    .clock #hours-tens.time-0 .top-left {
+      background: white; }
+    .clock #seconds-ones.time-0 .bottom-left,
+    .clock #seconds-tens.time-0 .bottom-left,
+    .clock #minutes-ones.time-0 .bottom-left,
+    .clock #minutes-tens.time-0 .bottom-left,
+    .clock #hours-ones.time-0 .bottom-left,
+    .clock #hours-tens.time-0 .bottom-left {
+      background: white; }
+    .clock #seconds-ones.time-0 .top-right,
+    .clock #seconds-tens.time-0 .top-right,
+    .clock #minutes-ones.time-0 .top-right,
+    .clock #minutes-tens.time-0 .top-right,
+    .clock #hours-ones.time-0 .top-right,
+    .clock #hours-tens.time-0 .top-right {
+      background: white; }
+    .clock #seconds-ones.time-0 .bottom-right,
+    .clock #seconds-tens.time-0 .bottom-right,
+    .clock #minutes-ones.time-0 .bottom-right,
+    .clock #minutes-tens.time-0 .bottom-right,
+    .clock #hours-ones.time-0 .bottom-right,
+    .clock #hours-tens.time-0 .bottom-right {
+      background: white; }
+    .clock #seconds-ones.time-1 .top-bar,
+    .clock #seconds-tens.time-1 .top-bar,
+    .clock #minutes-ones.time-1 .top-bar,
+    .clock #minutes-tens.time-1 .top-bar,
+    .clock #hours-ones.time-1 .top-bar,
+    .clock #hours-tens.time-1 .top-bar {
+      background: transparent; }
+    .clock #seconds-ones.time-1 .mid-bar,
+    .clock #seconds-tens.time-1 .mid-bar,
+    .clock #minutes-ones.time-1 .mid-bar,
+    .clock #minutes-tens.time-1 .mid-bar,
+    .clock #hours-ones.time-1 .mid-bar,
+    .clock #hours-tens.time-1 .mid-bar {
+      background: transparent; }
+    .clock #seconds-ones.time-1 .bottom-bar,
+    .clock #seconds-tens.time-1 .bottom-bar,
+    .clock #minutes-ones.time-1 .bottom-bar,
+    .clock #minutes-tens.time-1 .bottom-bar,
+    .clock #hours-ones.time-1 .bottom-bar,
+    .clock #hours-tens.time-1 .bottom-bar {
+      background: transparent; }
+    .clock #seconds-ones.time-1 .top-left,
+    .clock #seconds-tens.time-1 .top-left,
+    .clock #minutes-ones.time-1 .top-left,
+    .clock #minutes-tens.time-1 .top-left,
+    .clock #hours-ones.time-1 .top-left,
+    .clock #hours-tens.time-1 .top-left {
+      background: transparent; }
+    .clock #seconds-ones.time-1 .bottom-left,
+    .clock #seconds-tens.time-1 .bottom-left,
+    .clock #minutes-ones.time-1 .bottom-left,
+    .clock #minutes-tens.time-1 .bottom-left,
+    .clock #hours-ones.time-1 .bottom-left,
+    .clock #hours-tens.time-1 .bottom-left {
+      background: transparent; }
+    .clock #seconds-ones.time-1 .top-right,
+    .clock #seconds-tens.time-1 .top-right,
+    .clock #minutes-ones.time-1 .top-right,
+    .clock #minutes-tens.time-1 .top-right,
+    .clock #hours-ones.time-1 .top-right,
+    .clock #hours-tens.time-1 .top-right {
+      background: white; }
+    .clock #seconds-ones.time-1 .bottom-right,
+    .clock #seconds-tens.time-1 .bottom-right,
+    .clock #minutes-ones.time-1 .bottom-right,
+    .clock #minutes-tens.time-1 .bottom-right,
+    .clock #hours-ones.time-1 .bottom-right,
+    .clock #hours-tens.time-1 .bottom-right {
+      background: white; }
+    .clock #seconds-ones.time-2 .top-bar,
+    .clock #seconds-tens.time-2 .top-bar,
+    .clock #minutes-ones.time-2 .top-bar,
+    .clock #minutes-tens.time-2 .top-bar,
+    .clock #hours-ones.time-2 .top-bar,
+    .clock #hours-tens.time-2 .top-bar {
+      background: white; }
+    .clock #seconds-ones.time-2 .mid-bar,
+    .clock #seconds-tens.time-2 .mid-bar,
+    .clock #minutes-ones.time-2 .mid-bar,
+    .clock #minutes-tens.time-2 .mid-bar,
+    .clock #hours-ones.time-2 .mid-bar,
+    .clock #hours-tens.time-2 .mid-bar {
+      background: white; }
+    .clock #seconds-ones.time-2 .bottom-bar,
+    .clock #seconds-tens.time-2 .bottom-bar,
+    .clock #minutes-ones.time-2 .bottom-bar,
+    .clock #minutes-tens.time-2 .bottom-bar,
+    .clock #hours-ones.time-2 .bottom-bar,
+    .clock #hours-tens.time-2 .bottom-bar {
+      background: white; }
+    .clock #seconds-ones.time-2 .top-left,
+    .clock #seconds-tens.time-2 .top-left,
+    .clock #minutes-ones.time-2 .top-left,
+    .clock #minutes-tens.time-2 .top-left,
+    .clock #hours-ones.time-2 .top-left,
+    .clock #hours-tens.time-2 .top-left {
+      background: transparent; }
+    .clock #seconds-ones.time-2 .bottom-left,
+    .clock #seconds-tens.time-2 .bottom-left,
+    .clock #minutes-ones.time-2 .bottom-left,
+    .clock #minutes-tens.time-2 .bottom-left,
+    .clock #hours-ones.time-2 .bottom-left,
+    .clock #hours-tens.time-2 .bottom-left {
+      background: white; }
+    .clock #seconds-ones.time-2 .top-right,
+    .clock #seconds-tens.time-2 .top-right,
+    .clock #minutes-ones.time-2 .top-right,
+    .clock #minutes-tens.time-2 .top-right,
+    .clock #hours-ones.time-2 .top-right,
+    .clock #hours-tens.time-2 .top-right {
+      background: white; }
+    .clock #seconds-ones.time-2 .bottom-right,
+    .clock #seconds-tens.time-2 .bottom-right,
+    .clock #minutes-ones.time-2 .bottom-right,
+    .clock #minutes-tens.time-2 .bottom-right,
+    .clock #hours-ones.time-2 .bottom-right,
+    .clock #hours-tens.time-2 .bottom-right {
+      background: transparent; }
+    .clock #seconds-ones.time-3 .top-bar,
+    .clock #seconds-tens.time-3 .top-bar,
+    .clock #minutes-ones.time-3 .top-bar,
+    .clock #minutes-tens.time-3 .top-bar,
+    .clock #hours-ones.time-3 .top-bar,
+    .clock #hours-tens.time-3 .top-bar {
+      background: white; }
+    .clock #seconds-ones.time-3 .mid-bar,
+    .clock #seconds-tens.time-3 .mid-bar,
+    .clock #minutes-ones.time-3 .mid-bar,
+    .clock #minutes-tens.time-3 .mid-bar,
+    .clock #hours-ones.time-3 .mid-bar,
+    .clock #hours-tens.time-3 .mid-bar {
+      background: white; }
+    .clock #seconds-ones.time-3 .bottom-bar,
+    .clock #seconds-tens.time-3 .bottom-bar,
+    .clock #minutes-ones.time-3 .bottom-bar,
+    .clock #minutes-tens.time-3 .bottom-bar,
+    .clock #hours-ones.time-3 .bottom-bar,
+    .clock #hours-tens.time-3 .bottom-bar {
+      background: white; }
+    .clock #seconds-ones.time-3 .top-left,
+    .clock #seconds-tens.time-3 .top-left,
+    .clock #minutes-ones.time-3 .top-left,
+    .clock #minutes-tens.time-3 .top-left,
+    .clock #hours-ones.time-3 .top-left,
+    .clock #hours-tens.time-3 .top-left {
+      background: transparent; }
+    .clock #seconds-ones.time-3 .bottom-left,
+    .clock #seconds-tens.time-3 .bottom-left,
+    .clock #minutes-ones.time-3 .bottom-left,
+    .clock #minutes-tens.time-3 .bottom-left,
+    .clock #hours-ones.time-3 .bottom-left,
+    .clock #hours-tens.time-3 .bottom-left {
+      background: transparent; }
+    .clock #seconds-ones.time-3 .top-right,
+    .clock #seconds-tens.time-3 .top-right,
+    .clock #minutes-ones.time-3 .top-right,
+    .clock #minutes-tens.time-3 .top-right,
+    .clock #hours-ones.time-3 .top-right,
+    .clock #hours-tens.time-3 .top-right {
+      background: white; }
+    .clock #seconds-ones.time-3 .bottom-right,
+    .clock #seconds-tens.time-3 .bottom-right,
+    .clock #minutes-ones.time-3 .bottom-right,
+    .clock #minutes-tens.time-3 .bottom-right,
+    .clock #hours-ones.time-3 .bottom-right,
+    .clock #hours-tens.time-3 .bottom-right {
+      background: white; }
+    .clock #seconds-ones.time-4 .top-bar,
+    .clock #seconds-tens.time-4 .top-bar,
+    .clock #minutes-ones.time-4 .top-bar,
+    .clock #minutes-tens.time-4 .top-bar,
+    .clock #hours-ones.time-4 .top-bar,
+    .clock #hours-tens.time-4 .top-bar {
+      background: transparent; }
+    .clock #seconds-ones.time-4 .mid-bar,
+    .clock #seconds-tens.time-4 .mid-bar,
+    .clock #minutes-ones.time-4 .mid-bar,
+    .clock #minutes-tens.time-4 .mid-bar,
+    .clock #hours-ones.time-4 .mid-bar,
+    .clock #hours-tens.time-4 .mid-bar {
+      background: white; }
+    .clock #seconds-ones.time-4 .bottom-bar,
+    .clock #seconds-tens.time-4 .bottom-bar,
+    .clock #minutes-ones.time-4 .bottom-bar,
+    .clock #minutes-tens.time-4 .bottom-bar,
+    .clock #hours-ones.time-4 .bottom-bar,
+    .clock #hours-tens.time-4 .bottom-bar {
+      background: transparent; }
+    .clock #seconds-ones.time-4 .top-left,
+    .clock #seconds-tens.time-4 .top-left,
+    .clock #minutes-ones.time-4 .top-left,
+    .clock #minutes-tens.time-4 .top-left,
+    .clock #hours-ones.time-4 .top-left,
+    .clock #hours-tens.time-4 .top-left {
+      background: white; }
+    .clock #seconds-ones.time-4 .bottom-left,
+    .clock #seconds-tens.time-4 .bottom-left,
+    .clock #minutes-ones.time-4 .bottom-left,
+    .clock #minutes-tens.time-4 .bottom-left,
+    .clock #hours-ones.time-4 .bottom-left,
+    .clock #hours-tens.time-4 .bottom-left {
+      background: transparent; }
+    .clock #seconds-ones.time-4 .top-right,
+    .clock #seconds-tens.time-4 .top-right,
+    .clock #minutes-ones.time-4 .top-right,
+    .clock #minutes-tens.time-4 .top-right,
+    .clock #hours-ones.time-4 .top-right,
+    .clock #hours-tens.time-4 .top-right {
+      background: white; }
+    .clock #seconds-ones.time-4 .bottom-right,
+    .clock #seconds-tens.time-4 .bottom-right,
+    .clock #minutes-ones.time-4 .bottom-right,
+    .clock #minutes-tens.time-4 .bottom-right,
+    .clock #hours-ones.time-4 .bottom-right,
+    .clock #hours-tens.time-4 .bottom-right {
+      background: white; }
+    .clock #seconds-ones.time-5 .top-bar,
+    .clock #seconds-tens.time-5 .top-bar,
+    .clock #minutes-ones.time-5 .top-bar,
+    .clock #minutes-tens.time-5 .top-bar,
+    .clock #hours-ones.time-5 .top-bar,
+    .clock #hours-tens.time-5 .top-bar {
+      background: white; }
+    .clock #seconds-ones.time-5 .mid-bar,
+    .clock #seconds-tens.time-5 .mid-bar,
+    .clock #minutes-ones.time-5 .mid-bar,
+    .clock #minutes-tens.time-5 .mid-bar,
+    .clock #hours-ones.time-5 .mid-bar,
+    .clock #hours-tens.time-5 .mid-bar {
+      background: white; }
+    .clock #seconds-ones.time-5 .bottom-bar,
+    .clock #seconds-tens.time-5 .bottom-bar,
+    .clock #minutes-ones.time-5 .bottom-bar,
+    .clock #minutes-tens.time-5 .bottom-bar,
+    .clock #hours-ones.time-5 .bottom-bar,
+    .clock #hours-tens.time-5 .bottom-bar {
+      background: white; }
+    .clock #seconds-ones.time-5 .top-left,
+    .clock #seconds-tens.time-5 .top-left,
+    .clock #minutes-ones.time-5 .top-left,
+    .clock #minutes-tens.time-5 .top-left,
+    .clock #hours-ones.time-5 .top-left,
+    .clock #hours-tens.time-5 .top-left {
+      background: white; }
+    .clock #seconds-ones.time-5 .bottom-left,
+    .clock #seconds-tens.time-5 .bottom-left,
+    .clock #minutes-ones.time-5 .bottom-left,
+    .clock #minutes-tens.time-5 .bottom-left,
+    .clock #hours-ones.time-5 .bottom-left,
+    .clock #hours-tens.time-5 .bottom-left {
+      background: transparent; }
+    .clock #seconds-ones.time-5 .top-right,
+    .clock #seconds-tens.time-5 .top-right,
+    .clock #minutes-ones.time-5 .top-right,
+    .clock #minutes-tens.time-5 .top-right,
+    .clock #hours-ones.time-5 .top-right,
+    .clock #hours-tens.time-5 .top-right {
+      background: transparent; }
+    .clock #seconds-ones.time-5 .bottom-right,
+    .clock #seconds-tens.time-5 .bottom-right,
+    .clock #minutes-ones.time-5 .bottom-right,
+    .clock #minutes-tens.time-5 .bottom-right,
+    .clock #hours-ones.time-5 .bottom-right,
+    .clock #hours-tens.time-5 .bottom-right {
+      background: white; }
+    .clock #seconds-ones.time-6 .top-bar,
+    .clock #seconds-tens.time-6 .top-bar,
+    .clock #minutes-ones.time-6 .top-bar,
+    .clock #minutes-tens.time-6 .top-bar,
+    .clock #hours-ones.time-6 .top-bar,
+    .clock #hours-tens.time-6 .top-bar {
+      background: white; }
+    .clock #seconds-ones.time-6 .mid-bar,
+    .clock #seconds-tens.time-6 .mid-bar,
+    .clock #minutes-ones.time-6 .mid-bar,
+    .clock #minutes-tens.time-6 .mid-bar,
+    .clock #hours-ones.time-6 .mid-bar,
+    .clock #hours-tens.time-6 .mid-bar {
+      background: white; }
+    .clock #seconds-ones.time-6 .bottom-bar,
+    .clock #seconds-tens.time-6 .bottom-bar,
+    .clock #minutes-ones.time-6 .bottom-bar,
+    .clock #minutes-tens.time-6 .bottom-bar,
+    .clock #hours-ones.time-6 .bottom-bar,
+    .clock #hours-tens.time-6 .bottom-bar {
+      background: white; }
+    .clock #seconds-ones.time-6 .top-left,
+    .clock #seconds-tens.time-6 .top-left,
+    .clock #minutes-ones.time-6 .top-left,
+    .clock #minutes-tens.time-6 .top-left,
+    .clock #hours-ones.time-6 .top-left,
+    .clock #hours-tens.time-6 .top-left {
+      background: white; }
+    .clock #seconds-ones.time-6 .bottom-left,
+    .clock #seconds-tens.time-6 .bottom-left,
+    .clock #minutes-ones.time-6 .bottom-left,
+    .clock #minutes-tens.time-6 .bottom-left,
+    .clock #hours-ones.time-6 .bottom-left,
+    .clock #hours-tens.time-6 .bottom-left {
+      background: white; }
+    .clock #seconds-ones.time-6 .top-right,
+    .clock #seconds-tens.time-6 .top-right,
+    .clock #minutes-ones.time-6 .top-right,
+    .clock #minutes-tens.time-6 .top-right,
+    .clock #hours-ones.time-6 .top-right,
+    .clock #hours-tens.time-6 .top-right {
+      background: transparent; }
+    .clock #seconds-ones.time-6 .bottom-right,
+    .clock #seconds-tens.time-6 .bottom-right,
+    .clock #minutes-ones.time-6 .bottom-right,
+    .clock #minutes-tens.time-6 .bottom-right,
+    .clock #hours-ones.time-6 .bottom-right,
+    .clock #hours-tens.time-6 .bottom-right {
+      background: white; }
+    .clock #seconds-ones.time-7 .top-bar,
+    .clock #seconds-tens.time-7 .top-bar,
+    .clock #minutes-ones.time-7 .top-bar,
+    .clock #minutes-tens.time-7 .top-bar,
+    .clock #hours-ones.time-7 .top-bar,
+    .clock #hours-tens.time-7 .top-bar {
+      background: white; }
+    .clock #seconds-ones.time-7 .mid-bar,
+    .clock #seconds-tens.time-7 .mid-bar,
+    .clock #minutes-ones.time-7 .mid-bar,
+    .clock #minutes-tens.time-7 .mid-bar,
+    .clock #hours-ones.time-7 .mid-bar,
+    .clock #hours-tens.time-7 .mid-bar {
+      background: transparent; }
+    .clock #seconds-ones.time-7 .bottom-bar,
+    .clock #seconds-tens.time-7 .bottom-bar,
+    .clock #minutes-ones.time-7 .bottom-bar,
+    .clock #minutes-tens.time-7 .bottom-bar,
+    .clock #hours-ones.time-7 .bottom-bar,
+    .clock #hours-tens.time-7 .bottom-bar {
+      background: transparent; }
+    .clock #seconds-ones.time-7 .top-left,
+    .clock #seconds-tens.time-7 .top-left,
+    .clock #minutes-ones.time-7 .top-left,
+    .clock #minutes-tens.time-7 .top-left,
+    .clock #hours-ones.time-7 .top-left,
+    .clock #hours-tens.time-7 .top-left {
+      background: transparent; }
+    .clock #seconds-ones.time-7 .bottom-left,
+    .clock #seconds-tens.time-7 .bottom-left,
+    .clock #minutes-ones.time-7 .bottom-left,
+    .clock #minutes-tens.time-7 .bottom-left,
+    .clock #hours-ones.time-7 .bottom-left,
+    .clock #hours-tens.time-7 .bottom-left {
+      background: transparent; }
+    .clock #seconds-ones.time-7 .top-right,
+    .clock #seconds-tens.time-7 .top-right,
+    .clock #minutes-ones.time-7 .top-right,
+    .clock #minutes-tens.time-7 .top-right,
+    .clock #hours-ones.time-7 .top-right,
+    .clock #hours-tens.time-7 .top-right {
+      background: white; }
+    .clock #seconds-ones.time-7 .bottom-right,
+    .clock #seconds-tens.time-7 .bottom-right,
+    .clock #minutes-ones.time-7 .bottom-right,
+    .clock #minutes-tens.time-7 .bottom-right,
+    .clock #hours-ones.time-7 .bottom-right,
+    .clock #hours-tens.time-7 .bottom-right {
+      background: white; }
+    .clock #seconds-ones.time-8 .top-bar,
+    .clock #seconds-tens.time-8 .top-bar,
+    .clock #minutes-ones.time-8 .top-bar,
+    .clock #minutes-tens.time-8 .top-bar,
+    .clock #hours-ones.time-8 .top-bar,
+    .clock #hours-tens.time-8 .top-bar {
+      background: white; }
+    .clock #seconds-ones.time-8 .mid-bar,
+    .clock #seconds-tens.time-8 .mid-bar,
+    .clock #minutes-ones.time-8 .mid-bar,
+    .clock #minutes-tens.time-8 .mid-bar,
+    .clock #hours-ones.time-8 .mid-bar,
+    .clock #hours-tens.time-8 .mid-bar {
+      background: white; }
+    .clock #seconds-ones.time-8 .bottom-bar,
+    .clock #seconds-tens.time-8 .bottom-bar,
+    .clock #minutes-ones.time-8 .bottom-bar,
+    .clock #minutes-tens.time-8 .bottom-bar,
+    .clock #hours-ones.time-8 .bottom-bar,
+    .clock #hours-tens.time-8 .bottom-bar {
+      background: white; }
+    .clock #seconds-ones.time-8 .top-left,
+    .clock #seconds-tens.time-8 .top-left,
+    .clock #minutes-ones.time-8 .top-left,
+    .clock #minutes-tens.time-8 .top-left,
+    .clock #hours-ones.time-8 .top-left,
+    .clock #hours-tens.time-8 .top-left {
+      background: white; }
+    .clock #seconds-ones.time-8 .bottom-left,
+    .clock #seconds-tens.time-8 .bottom-left,
+    .clock #minutes-ones.time-8 .bottom-left,
+    .clock #minutes-tens.time-8 .bottom-left,
+    .clock #hours-ones.time-8 .bottom-left,
+    .clock #hours-tens.time-8 .bottom-left {
+      background: white; }
+    .clock #seconds-ones.time-8 .top-right,
+    .clock #seconds-tens.time-8 .top-right,
+    .clock #minutes-ones.time-8 .top-right,
+    .clock #minutes-tens.time-8 .top-right,
+    .clock #hours-ones.time-8 .top-right,
+    .clock #hours-tens.time-8 .top-right {
+      background: white; }
+    .clock #seconds-ones.time-8 .bottom-right,
+    .clock #seconds-tens.time-8 .bottom-right,
+    .clock #minutes-ones.time-8 .bottom-right,
+    .clock #minutes-tens.time-8 .bottom-right,
+    .clock #hours-ones.time-8 .bottom-right,
+    .clock #hours-tens.time-8 .bottom-right {
+      background: white; }
+    .clock #seconds-ones.time-9 .top-bar,
+    .clock #seconds-tens.time-9 .top-bar,
+    .clock #minutes-ones.time-9 .top-bar,
+    .clock #minutes-tens.time-9 .top-bar,
+    .clock #hours-ones.time-9 .top-bar,
+    .clock #hours-tens.time-9 .top-bar {
+      background: white; }
+    .clock #seconds-ones.time-9 .mid-bar,
+    .clock #seconds-tens.time-9 .mid-bar,
+    .clock #minutes-ones.time-9 .mid-bar,
+    .clock #minutes-tens.time-9 .mid-bar,
+    .clock #hours-ones.time-9 .mid-bar,
+    .clock #hours-tens.time-9 .mid-bar {
+      background: white; }
+    .clock #seconds-ones.time-9 .bottom-bar,
+    .clock #seconds-tens.time-9 .bottom-bar,
+    .clock #minutes-ones.time-9 .bottom-bar,
+    .clock #minutes-tens.time-9 .bottom-bar,
+    .clock #hours-ones.time-9 .bottom-bar,
+    .clock #hours-tens.time-9 .bottom-bar {
+      background: white; }
+    .clock #seconds-ones.time-9 .top-left,
+    .clock #seconds-tens.time-9 .top-left,
+    .clock #minutes-ones.time-9 .top-left,
+    .clock #minutes-tens.time-9 .top-left,
+    .clock #hours-ones.time-9 .top-left,
+    .clock #hours-tens.time-9 .top-left {
+      background: white; }
+    .clock #seconds-ones.time-9 .bottom-left,
+    .clock #seconds-tens.time-9 .bottom-left,
+    .clock #minutes-ones.time-9 .bottom-left,
+    .clock #minutes-tens.time-9 .bottom-left,
+    .clock #hours-ones.time-9 .bottom-left,
+    .clock #hours-tens.time-9 .bottom-left {
+      background: transparent; }
+    .clock #seconds-ones.time-9 .top-right,
+    .clock #seconds-tens.time-9 .top-right,
+    .clock #minutes-ones.time-9 .top-right,
+    .clock #minutes-tens.time-9 .top-right,
+    .clock #hours-ones.time-9 .top-right,
+    .clock #hours-tens.time-9 .top-right {
+      background: white; }
+    .clock #seconds-ones.time-9 .bottom-right,
+    .clock #seconds-tens.time-9 .bottom-right,
+    .clock #minutes-ones.time-9 .bottom-right,
+    .clock #minutes-tens.time-9 .bottom-right,
+    .clock #hours-ones.time-9 .bottom-right,
+    .clock #hours-tens.time-9 .bottom-right {
+      background: white; }
+
+.divider {
+  display: inline-block;
+  width: 26px;
+  height: 200px;
+  position: relative; }
+  .divider:before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: white;
+    left: 3px;
+    top: 20%; }
+  .divider:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: white;
+    left: 3px;
+    top: 70%; }
+
+.labels span {
+  display: inline-block;
+  width: 204px; }
+
+/*# sourceMappingURL=style.css.map */
