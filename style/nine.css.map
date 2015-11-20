@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEC;6BAAc;EAAE,UAAU,EAAE,GAAG;AAC/B;6BAAc;EAAE,UAAU,EAAE,GAAG;AAC/B;gCAAc;EAAE,UAAU,EAAE,GAAG;AAC/B;8BAAc;EAAE,UAAU,EAAE,GAAG;AAC/B;iCAAc;EAAE,UAAU,EAAE,WAAW;AACvC;+BAAc;EAAE,UAAU,EAAE,GAAG;AAC/B;kCAAc;EAAE,UAAU,EAAE,GAAG",
-"sources": ["../scss/nine.scss"],
-"names": [],
-"file": "nine.css"
-}
