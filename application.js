@@ -26,19 +26,9 @@ function hexTimeBackground() {
 	body.style.background = hex;
 }
 
-function randomBackground () {
-	var hexVars = 'abcdef0123456789';
-	var bg = [];
-	for(var i = 0; i < 6; i++) {
-		bg.push(hexVars[Math.floor(Math.random() * (15 + 1))]);
-	}
-	return bg = '#' + bg.join('').toUpperCase();
-	// document.getElementById('hex-color').innerText = bg;
-}
-
 function init() {
-	var date    = new Date();
-	body.style.background = randomBackground();
+	var date = new Date();
+	body.style.background = hexTimeBackground();
 	seconds.render(date.getSeconds());
 	minutes.render(date.getMinutes());
 	hours.render(date.getHours() - 12);
