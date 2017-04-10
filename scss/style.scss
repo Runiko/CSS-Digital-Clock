@@ -1,9 +1,12 @@
 @import 'variables';
 @import 'segments';
-@import 'transitions';
 
-#hex-color { font-family: courier; }
-body{ background: black; }
+#body { 
+  -webkit-transition: background 5.0s;
+  -moze-transition:   background 5.0s;
+  transition:         background 5.0s;
+}
+
 .clock{
 	height: 200px;
 	margin-top: 250px;
@@ -13,6 +16,10 @@ body{ background: black; }
 
 	.segment {
 		background: $segment-color;
+		position: absolute;
+		-webkit-transition: background 0.15s;
+		-moze-transition:   background 0.15s;
+		transition:         background 0.15s;
 	}
 
 	& > div, & > div + div {
@@ -59,7 +66,7 @@ body{ background: black; }
 		}
 
 		&.time-6 {
-			.top-right { visibility: hidden; }
+			.top-right 	  { visibility: hidden; }
 		}
 
 		&.time-7 {
@@ -91,9 +98,4 @@ body{ background: black; }
 	}
 	&:before { top: 20%; }
 	&:after  { top: 70%; }
-}
-
-.labels span{
-	display: inline-block;
-	width: 204px;
 }

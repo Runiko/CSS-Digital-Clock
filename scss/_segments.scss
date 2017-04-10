@@ -4,7 +4,6 @@
   width: $digit-width - (2 * $segment-width);
   height: $segment-width;
   left: $segment-width;
-  position: absolute;
 
   &:before {
     content: '';
@@ -20,8 +19,8 @@
   }
 }
 
-.top-bar    { top: 0%; }
-.mid-bar    { top: $digit-width - 6 }
+.top-bar    { top: 0; }
+.mid-bar    { top: $digit-width - $segment-width/2 }
 .bottom-bar { bottom: 0; }
 
 .top-left,
@@ -30,7 +29,6 @@
 .bottom-right {
   width: $segment-width;
   height: $digit-width - (2 * $segment-width);
-  position: absolute;
 
   &:before {
     content: '';
