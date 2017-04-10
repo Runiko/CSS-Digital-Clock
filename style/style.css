@@ -36,10 +36,12 @@
   top: 0; }
 
 .segment-2 {
-  top: 94px; }
+  top: 92px;
+  width: 70px;
+  left: 15px; }
 
 .segment-3 {
-  bottom: 0; }
+  bottom: 6px; }
 
 .segment-4,
 .segment-5,
@@ -76,7 +78,7 @@
   top: 15px; }
 
 .segment-6, .segment-7 {
-  bottom: 15px; }
+  bottom: 20px; }
 
 .segment-4, .segment-6 {
   left: 0; }

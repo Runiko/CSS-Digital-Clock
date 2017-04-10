@@ -35,9 +35,13 @@
     }
 }
 
-.segment-1    { top: 0; }
-.segment-2    { top: $digit-width - $segment-width/2 }
-.segment-3 { bottom: 0; }
+.segment-1 { top: 0; }
+.segment-2 {
+    top: $digit-width - 8;
+    width: 70px;
+    left: 15px;
+}
+.segment-3 { bottom: $segment-width/2; }
 
 .segment-4,
 .segment-5,
@@ -64,7 +68,7 @@
 }
 
 .segment-4, .segment-5 { top: $segment-width + 3; }
-.segment-6, .segment-7 { bottom: $segment-width + 3; }
+.segment-6, .segment-7 { bottom: $segment-width + 8; }
 
 .segment-4, .segment-6  { left:   0; }
 .segment-5, .segment-7 { right:  0; }
