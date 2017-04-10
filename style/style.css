@@ -1,3 +1,10 @@
+.segment {
+  background: white;
+  position: absolute;
+  -webkit-transition: background 0.15s;
+  -moze-transition: background 0.15s;
+  transition: background 0.15s; }
+
 .top-bar,
 .mid-bar,
 .bottom-bar {
@@ -88,12 +95,6 @@
   text-align: center;
   position: relative;
   background: transparent; }
-  .clock .segment {
-    background: white;
-    position: absolute;
-    -webkit-transition: background 0.15s;
-    -moze-transition: background 0.15s;
-    transition: background 0.15s; }
   .clock > div, .clock > div + div {
     margin-right: 20px; }
   .clock #seconds-ones,

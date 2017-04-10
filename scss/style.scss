@@ -14,14 +14,6 @@
 	position: relative;
 	background: $segment-off;
 
-	.segment {
-		background: $segment-color;
-		position: absolute;
-		-webkit-transition: background 0.15s;
-		-moze-transition:   background 0.15s;
-		transition:         background 0.15s;
-	}
-
 	& > div, & > div + div {
 		margin-right: 20px;
 	}

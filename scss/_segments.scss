@@ -1,22 +1,30 @@
+.segment {
+    background: $segment-color;
+    position: absolute;
+    -webkit-transition: background 0.15s;
+    -moze-transition:   background 0.15s;
+    transition:         background 0.15s;
+}
+
 .top-bar,
 .mid-bar,
 .bottom-bar{
-  width: $digit-width - (2 * $segment-width);
-  height: $segment-width;
-  left: $segment-width;
+    width: $digit-width - (2 * $segment-width);
+    height: $segment-width;
+    left: $segment-width;
 
-  &:before {
-    content: '';
-    position: absolute;
-    left: -$segment-width;
-    @include triangle-edges(transparent, $segment-color, transparent, transparent);
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    right: -$segment-width;
-    @include triangle-edges(transparent, transparent, transparent, $segment-color);
-  }
+    &:before {
+        content: '';
+        position: absolute;
+        left: -$segment-width;
+        @include triangle-edges(transparent, $segment-color, transparent, transparent);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        right: -$segment-width;
+        @include triangle-edges(transparent, transparent, transparent, $segment-color);
+    }
 }
 
 .top-bar    { top: 0; }
@@ -27,23 +35,23 @@
 .top-right,
 .bottom-left,
 .bottom-right {
-  width: $segment-width;
-  height: $digit-width - (2 * $segment-width);
+    width: $segment-width;
+    height: $digit-width - (2 * $segment-width);
 
-  &:before {
-    content: '';
-    position: absolute;
-    top: -$segment-width;
-    @include triangle-edges(transparent, transparent, $segment-color, transparent);
-    left: 0;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: -$segment-width;
-    @include triangle-edges($segment-color, transparent, transparent, transparent);
-    right: 0;
-  }
+    &:before {
+        content: '';
+        position: absolute;
+        top: -$segment-width;
+        @include triangle-edges(transparent, transparent, $segment-color, transparent);
+        left: 0;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -$segment-width;
+        @include triangle-edges($segment-color, transparent, transparent, transparent);
+        right: 0;
+    }
 
 }
 
