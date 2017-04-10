@@ -5,15 +5,15 @@
   -moze-transition: background 0.15s;
   transition: background 0.15s; }
 
-.top-bar,
-.mid-bar,
-.bottom-bar {
+.segment-1,
+.segment-2,
+.segment-3 {
   width: 76px;
   height: 12px;
   left: 12px; }
-  .top-bar:before,
-  .mid-bar:before,
-  .bottom-bar:before {
+  .segment-1:before,
+  .segment-2:before,
+  .segment-3:before {
     content: '';
     position: absolute;
     left: -12px;
@@ -21,9 +21,9 @@
     border-right: 6px solid white;
     border-left: 6px solid transparent;
     border-bottom: 6px solid transparent; }
-  .top-bar:after,
-  .mid-bar:after,
-  .bottom-bar:after {
+  .segment-1:after,
+  .segment-2:after,
+  .segment-3:after {
     content: '';
     position: absolute;
     right: -12px;
@@ -32,25 +32,25 @@
     border-left: 6px solid white;
     border-bottom: 6px solid transparent; }
 
-.top-bar {
+.segment-1 {
   top: 0; }
 
-.mid-bar {
+.segment-2 {
   top: 94px; }
 
-.bottom-bar {
+.segment-3 {
   bottom: 0; }
 
-.top-left,
-.top-right,
-.bottom-left,
-.bottom-right {
+.segment-4,
+.segment-5,
+.segment-6,
+.segment-7 {
   width: 12px;
   height: 76px; }
-  .top-left:before,
-  .top-right:before,
-  .bottom-left:before,
-  .bottom-right:before {
+  .segment-4:before,
+  .segment-5:before,
+  .segment-6:before,
+  .segment-7:before {
     content: '';
     position: absolute;
     top: -12px;
@@ -59,10 +59,10 @@
     border-left: 6px solid transparent;
     border-bottom: 6px solid white;
     left: 0; }
-  .top-left:after,
-  .top-right:after,
-  .bottom-left:after,
-  .bottom-right:after {
+  .segment-4:after,
+  .segment-5:after,
+  .segment-6:after,
+  .segment-7:after {
     content: '';
     position: absolute;
     bottom: -12px;
@@ -72,16 +72,16 @@
     border-bottom: 6px solid transparent;
     right: 0; }
 
-.top-left, .top-right {
+.segment-4, .segment-5 {
   top: 15px; }
 
-.bottom-left, .bottom-right {
+.segment-6, .segment-7 {
   bottom: 15px; }
 
-.top-left, .bottom-left {
+.segment-4, .segment-6 {
   left: 0; }
 
-.top-right, .bottom-right {
+.segment-5, .segment-7 {
   right: 0; }
 
 #body {
@@ -107,152 +107,152 @@
     height: 100%;
     width: 100px;
     position: relative; }
-    .clock #seconds-ones.time-0 .mid-bar,
-    .clock #seconds-tens.time-0 .mid-bar,
-    .clock #minutes-ones.time-0 .mid-bar,
-    .clock #minutes-tens.time-0 .mid-bar,
-    .clock #hours-ones.time-0 .mid-bar,
-    .clock #hours-tens.time-0 .mid-bar {
+    .clock #seconds-ones.time-0 .segment-2,
+    .clock #seconds-tens.time-0 .segment-2,
+    .clock #minutes-ones.time-0 .segment-2,
+    .clock #minutes-tens.time-0 .segment-2,
+    .clock #hours-ones.time-0 .segment-2,
+    .clock #hours-tens.time-0 .segment-2 {
       visibility: hidden; }
-    .clock #seconds-ones.time-1 .top-bar,
-    .clock #seconds-tens.time-1 .top-bar,
-    .clock #minutes-ones.time-1 .top-bar,
-    .clock #minutes-tens.time-1 .top-bar,
-    .clock #hours-ones.time-1 .top-bar,
-    .clock #hours-tens.time-1 .top-bar {
+    .clock #seconds-ones.time-1 .segment-1,
+    .clock #seconds-tens.time-1 .segment-1,
+    .clock #minutes-ones.time-1 .segment-1,
+    .clock #minutes-tens.time-1 .segment-1,
+    .clock #hours-ones.time-1 .segment-1,
+    .clock #hours-tens.time-1 .segment-1 {
       visibility: hidden; }
-    .clock #seconds-ones.time-1 .mid-bar,
-    .clock #seconds-tens.time-1 .mid-bar,
-    .clock #minutes-ones.time-1 .mid-bar,
-    .clock #minutes-tens.time-1 .mid-bar,
-    .clock #hours-ones.time-1 .mid-bar,
-    .clock #hours-tens.time-1 .mid-bar {
+    .clock #seconds-ones.time-1 .segment-2,
+    .clock #seconds-tens.time-1 .segment-2,
+    .clock #minutes-ones.time-1 .segment-2,
+    .clock #minutes-tens.time-1 .segment-2,
+    .clock #hours-ones.time-1 .segment-2,
+    .clock #hours-tens.time-1 .segment-2 {
       visibility: hidden; }
-    .clock #seconds-ones.time-1 .bottom-bar,
-    .clock #seconds-tens.time-1 .bottom-bar,
-    .clock #minutes-ones.time-1 .bottom-bar,
-    .clock #minutes-tens.time-1 .bottom-bar,
-    .clock #hours-ones.time-1 .bottom-bar,
-    .clock #hours-tens.time-1 .bottom-bar {
+    .clock #seconds-ones.time-1 .segment-3,
+    .clock #seconds-tens.time-1 .segment-3,
+    .clock #minutes-ones.time-1 .segment-3,
+    .clock #minutes-tens.time-1 .segment-3,
+    .clock #hours-ones.time-1 .segment-3,
+    .clock #hours-tens.time-1 .segment-3 {
       visibility: hidden; }
-    .clock #seconds-ones.time-1 .top-left,
-    .clock #seconds-tens.time-1 .top-left,
-    .clock #minutes-ones.time-1 .top-left,
-    .clock #minutes-tens.time-1 .top-left,
-    .clock #hours-ones.time-1 .top-left,
-    .clock #hours-tens.time-1 .top-left {
+    .clock #seconds-ones.time-1 .segment-4,
+    .clock #seconds-tens.time-1 .segment-4,
+    .clock #minutes-ones.time-1 .segment-4,
+    .clock #minutes-tens.time-1 .segment-4,
+    .clock #hours-ones.time-1 .segment-4,
+    .clock #hours-tens.time-1 .segment-4 {
       visibility: hidden; }
-    .clock #seconds-ones.time-1 .bottom-left,
-    .clock #seconds-tens.time-1 .bottom-left,
-    .clock #minutes-ones.time-1 .bottom-left,
-    .clock #minutes-tens.time-1 .bottom-left,
-    .clock #hours-ones.time-1 .bottom-left,
-    .clock #hours-tens.time-1 .bottom-left {
+    .clock #seconds-ones.time-1 .segment-6,
+    .clock #seconds-tens.time-1 .segment-6,
+    .clock #minutes-ones.time-1 .segment-6,
+    .clock #minutes-tens.time-1 .segment-6,
+    .clock #hours-ones.time-1 .segment-6,
+    .clock #hours-tens.time-1 .segment-6 {
       visibility: hidden; }
-    .clock #seconds-ones.time-2 .top-left,
-    .clock #seconds-tens.time-2 .top-left,
-    .clock #minutes-ones.time-2 .top-left,
-    .clock #minutes-tens.time-2 .top-left,
-    .clock #hours-ones.time-2 .top-left,
-    .clock #hours-tens.time-2 .top-left {
+    .clock #seconds-ones.time-2 .segment-4,
+    .clock #seconds-tens.time-2 .segment-4,
+    .clock #minutes-ones.time-2 .segment-4,
+    .clock #minutes-tens.time-2 .segment-4,
+    .clock #hours-ones.time-2 .segment-4,
+    .clock #hours-tens.time-2 .segment-4 {
       visibility: hidden; }
-    .clock #seconds-ones.time-2 .bottom-right,
-    .clock #seconds-tens.time-2 .bottom-right,
-    .clock #minutes-ones.time-2 .bottom-right,
-    .clock #minutes-tens.time-2 .bottom-right,
-    .clock #hours-ones.time-2 .bottom-right,
-    .clock #hours-tens.time-2 .bottom-right {
+    .clock #seconds-ones.time-2 .segment-7,
+    .clock #seconds-tens.time-2 .segment-7,
+    .clock #minutes-ones.time-2 .segment-7,
+    .clock #minutes-tens.time-2 .segment-7,
+    .clock #hours-ones.time-2 .segment-7,
+    .clock #hours-tens.time-2 .segment-7 {
       visibility: hidden; }
-    .clock #seconds-ones.time-3 .top-left,
-    .clock #seconds-tens.time-3 .top-left,
-    .clock #minutes-ones.time-3 .top-left,
-    .clock #minutes-tens.time-3 .top-left,
-    .clock #hours-ones.time-3 .top-left,
-    .clock #hours-tens.time-3 .top-left {
+    .clock #seconds-ones.time-3 .segment-4,
+    .clock #seconds-tens.time-3 .segment-4,
+    .clock #minutes-ones.time-3 .segment-4,
+    .clock #minutes-tens.time-3 .segment-4,
+    .clock #hours-ones.time-3 .segment-4,
+    .clock #hours-tens.time-3 .segment-4 {
       visibility: hidden; }
-    .clock #seconds-ones.time-3 .bottom-left,
-    .clock #seconds-tens.time-3 .bottom-left,
-    .clock #minutes-ones.time-3 .bottom-left,
-    .clock #minutes-tens.time-3 .bottom-left,
-    .clock #hours-ones.time-3 .bottom-left,
-    .clock #hours-tens.time-3 .bottom-left {
+    .clock #seconds-ones.time-3 .segment-6,
+    .clock #seconds-tens.time-3 .segment-6,
+    .clock #minutes-ones.time-3 .segment-6,
+    .clock #minutes-tens.time-3 .segment-6,
+    .clock #hours-ones.time-3 .segment-6,
+    .clock #hours-tens.time-3 .segment-6 {
       visibility: hidden; }
-    .clock #seconds-ones.time-4 .top-bar,
-    .clock #seconds-tens.time-4 .top-bar,
-    .clock #minutes-ones.time-4 .top-bar,
-    .clock #minutes-tens.time-4 .top-bar,
-    .clock #hours-ones.time-4 .top-bar,
-    .clock #hours-tens.time-4 .top-bar {
+    .clock #seconds-ones.time-4 .segment-1,
+    .clock #seconds-tens.time-4 .segment-1,
+    .clock #minutes-ones.time-4 .segment-1,
+    .clock #minutes-tens.time-4 .segment-1,
+    .clock #hours-ones.time-4 .segment-1,
+    .clock #hours-tens.time-4 .segment-1 {
       visibility: hidden; }
-    .clock #seconds-ones.time-4 .bottom-bar,
-    .clock #seconds-tens.time-4 .bottom-bar,
-    .clock #minutes-ones.time-4 .bottom-bar,
-    .clock #minutes-tens.time-4 .bottom-bar,
-    .clock #hours-ones.time-4 .bottom-bar,
-    .clock #hours-tens.time-4 .bottom-bar {
+    .clock #seconds-ones.time-4 .segment-3,
+    .clock #seconds-tens.time-4 .segment-3,
+    .clock #minutes-ones.time-4 .segment-3,
+    .clock #minutes-tens.time-4 .segment-3,
+    .clock #hours-ones.time-4 .segment-3,
+    .clock #hours-tens.time-4 .segment-3 {
       visibility: hidden; }
-    .clock #seconds-ones.time-4 .bottom-left,
-    .clock #seconds-tens.time-4 .bottom-left,
-    .clock #minutes-ones.time-4 .bottom-left,
-    .clock #minutes-tens.time-4 .bottom-left,
-    .clock #hours-ones.time-4 .bottom-left,
-    .clock #hours-tens.time-4 .bottom-left {
+    .clock #seconds-ones.time-4 .segment-6,
+    .clock #seconds-tens.time-4 .segment-6,
+    .clock #minutes-ones.time-4 .segment-6,
+    .clock #minutes-tens.time-4 .segment-6,
+    .clock #hours-ones.time-4 .segment-6,
+    .clock #hours-tens.time-4 .segment-6 {
       visibility: hidden; }
-    .clock #seconds-ones.time-5 .bottom-left,
-    .clock #seconds-tens.time-5 .bottom-left,
-    .clock #minutes-ones.time-5 .bottom-left,
-    .clock #minutes-tens.time-5 .bottom-left,
-    .clock #hours-ones.time-5 .bottom-left,
-    .clock #hours-tens.time-5 .bottom-left {
+    .clock #seconds-ones.time-5 .segment-6,
+    .clock #seconds-tens.time-5 .segment-6,
+    .clock #minutes-ones.time-5 .segment-6,
+    .clock #minutes-tens.time-5 .segment-6,
+    .clock #hours-ones.time-5 .segment-6,
+    .clock #hours-tens.time-5 .segment-6 {
       visibility: hidden; }
-    .clock #seconds-ones.time-5 .top-right,
-    .clock #seconds-tens.time-5 .top-right,
-    .clock #minutes-ones.time-5 .top-right,
-    .clock #minutes-tens.time-5 .top-right,
-    .clock #hours-ones.time-5 .top-right,
-    .clock #hours-tens.time-5 .top-right {
+    .clock #seconds-ones.time-5 .segment-5,
+    .clock #seconds-tens.time-5 .segment-5,
+    .clock #minutes-ones.time-5 .segment-5,
+    .clock #minutes-tens.time-5 .segment-5,
+    .clock #hours-ones.time-5 .segment-5,
+    .clock #hours-tens.time-5 .segment-5 {
       visibility: hidden; }
-    .clock #seconds-ones.time-6 .top-right,
-    .clock #seconds-tens.time-6 .top-right,
-    .clock #minutes-ones.time-6 .top-right,
-    .clock #minutes-tens.time-6 .top-right,
-    .clock #hours-ones.time-6 .top-right,
-    .clock #hours-tens.time-6 .top-right {
+    .clock #seconds-ones.time-6 .segment-5,
+    .clock #seconds-tens.time-6 .segment-5,
+    .clock #minutes-ones.time-6 .segment-5,
+    .clock #minutes-tens.time-6 .segment-5,
+    .clock #hours-ones.time-6 .segment-5,
+    .clock #hours-tens.time-6 .segment-5 {
       visibility: hidden; }
-    .clock #seconds-ones.time-7 .mid-bar,
-    .clock #seconds-tens.time-7 .mid-bar,
-    .clock #minutes-ones.time-7 .mid-bar,
-    .clock #minutes-tens.time-7 .mid-bar,
-    .clock #hours-ones.time-7 .mid-bar,
-    .clock #hours-tens.time-7 .mid-bar {
+    .clock #seconds-ones.time-7 .segment-2,
+    .clock #seconds-tens.time-7 .segment-2,
+    .clock #minutes-ones.time-7 .segment-2,
+    .clock #minutes-tens.time-7 .segment-2,
+    .clock #hours-ones.time-7 .segment-2,
+    .clock #hours-tens.time-7 .segment-2 {
       visibility: hidden; }
-    .clock #seconds-ones.time-7 .bottom-bar,
-    .clock #seconds-tens.time-7 .bottom-bar,
-    .clock #minutes-ones.time-7 .bottom-bar,
-    .clock #minutes-tens.time-7 .bottom-bar,
-    .clock #hours-ones.time-7 .bottom-bar,
-    .clock #hours-tens.time-7 .bottom-bar {
+    .clock #seconds-ones.time-7 .segment-3,
+    .clock #seconds-tens.time-7 .segment-3,
+    .clock #minutes-ones.time-7 .segment-3,
+    .clock #minutes-tens.time-7 .segment-3,
+    .clock #hours-ones.time-7 .segment-3,
+    .clock #hours-tens.time-7 .segment-3 {
       visibility: hidden; }
-    .clock #seconds-ones.time-7 .top-left,
-    .clock #seconds-tens.time-7 .top-left,
-    .clock #minutes-ones.time-7 .top-left,
-    .clock #minutes-tens.time-7 .top-left,
-    .clock #hours-ones.time-7 .top-left,
-    .clock #hours-tens.time-7 .top-left {
+    .clock #seconds-ones.time-7 .segment-4,
+    .clock #seconds-tens.time-7 .segment-4,
+    .clock #minutes-ones.time-7 .segment-4,
+    .clock #minutes-tens.time-7 .segment-4,
+    .clock #hours-ones.time-7 .segment-4,
+    .clock #hours-tens.time-7 .segment-4 {
       visibility: hidden; }
-    .clock #seconds-ones.time-7 .bottom-left,
-    .clock #seconds-tens.time-7 .bottom-left,
-    .clock #minutes-ones.time-7 .bottom-left,
-    .clock #minutes-tens.time-7 .bottom-left,
-    .clock #hours-ones.time-7 .bottom-left,
-    .clock #hours-tens.time-7 .bottom-left {
+    .clock #seconds-ones.time-7 .segment-6,
+    .clock #seconds-tens.time-7 .segment-6,
+    .clock #minutes-ones.time-7 .segment-6,
+    .clock #minutes-tens.time-7 .segment-6,
+    .clock #hours-ones.time-7 .segment-6,
+    .clock #hours-tens.time-7 .segment-6 {
       visibility: hidden; }
-    .clock #seconds-ones.time-9 .bottom-left,
-    .clock #seconds-tens.time-9 .bottom-left,
-    .clock #minutes-ones.time-9 .bottom-left,
-    .clock #minutes-tens.time-9 .bottom-left,
-    .clock #hours-ones.time-9 .bottom-left,
-    .clock #hours-tens.time-9 .bottom-left {
+    .clock #seconds-ones.time-9 .segment-6,
+    .clock #seconds-tens.time-9 .segment-6,
+    .clock #minutes-ones.time-9 .segment-6,
+    .clock #minutes-tens.time-9 .segment-6,
+    .clock #hours-ones.time-9 .segment-6,
+    .clock #hours-tens.time-9 .segment-6 {
       visibility: hidden; }
 
 .divider {

@@ -1,3 +1,11 @@
+// .segment-1 -> top-bar
+// .segment-2 -> mid-bar
+// .segment-3 -> bottom-bar
+// .segment-4 -> top-left
+// .segment-5 -> top-right
+// .segment-6 -> bottom-left
+// .segment-7 -> bottom-right
+
 .segment {
     background: $segment-color;
     position: absolute;
@@ -6,9 +14,9 @@
     transition:         background 0.15s;
 }
 
-.top-bar,
-.mid-bar,
-.bottom-bar{
+.segment-1,
+.segment-2,
+.segment-3{
     width: $digit-width - (2 * $segment-width);
     height: $segment-width;
     left: $segment-width;
@@ -27,14 +35,14 @@
     }
 }
 
-.top-bar    { top: 0; }
-.mid-bar    { top: $digit-width - $segment-width/2 }
-.bottom-bar { bottom: 0; }
+.segment-1    { top: 0; }
+.segment-2    { top: $digit-width - $segment-width/2 }
+.segment-3 { bottom: 0; }
 
-.top-left,
-.top-right,
-.bottom-left,
-.bottom-right {
+.segment-4,
+.segment-5,
+.segment-6,
+.segment-7 {
     width: $segment-width;
     height: $digit-width - (2 * $segment-width);
 
@@ -55,8 +63,8 @@
 
 }
 
-.top-left, .top-right { top: $segment-width + 3; }
-.bottom-left, .bottom-right { bottom: $segment-width + 3; }
+.segment-4, .segment-5 { top: $segment-width + 3; }
+.segment-6, .segment-7 { bottom: $segment-width + 3; }
 
-.top-left, .bottom-left  { left:   0; }
-.top-right, .bottom-right { right:  0; }
+.segment-4, .segment-6  { left:   0; }
+.segment-5, .segment-7 { right:  0; }

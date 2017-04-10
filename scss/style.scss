@@ -30,46 +30,46 @@
 		position: relative;
 
 		&.time-0 {
-			.mid-bar      { visibility: hidden; }
+			.segment-2 { visibility: hidden; }
 		}
 		&.time-1 {
-			.top-bar      { visibility: hidden; }
-			.mid-bar      { visibility: hidden; }
-			.bottom-bar   { visibility: hidden; }
-			.top-left     { visibility: hidden; }
-			.bottom-left  { visibility: hidden; }
+			.segment-1 { visibility: hidden; }
+			.segment-2 { visibility: hidden; }
+			.segment-3 { visibility: hidden; }
+			.segment-4 { visibility: hidden; }
+			.segment-6 { visibility: hidden; }
 		}
 		&.time-2 {
-			.top-left     { visibility: hidden; }
-			.bottom-right { visibility: hidden; }
+			.segment-4 { visibility: hidden; }
+			.segment-7 { visibility: hidden; }
 		}
 		&.time-3 {
-			.top-left     { visibility: hidden; }
-			.bottom-left  { visibility: hidden; }
+			.segment-4 { visibility: hidden; }
+			.segment-6 { visibility: hidden; }
 		}
 		&.time-4 {
-			.top-bar      { visibility: hidden; }
-			.bottom-bar   { visibility: hidden; }
-			.bottom-left  { visibility: hidden; }
+			.segment-1 { visibility: hidden; }
+			.segment-3 { visibility: hidden; }
+			.segment-6 { visibility: hidden; }
 		}
 		&.time-5 {
-			.bottom-left  { visibility: hidden; }
-			.top-right    { visibility: hidden; }
+			.segment-6 { visibility: hidden; }
+			.segment-5 { visibility: hidden; }
 		}
 
 		&.time-6 {
-			.top-right 	  { visibility: hidden; }
+			.segment-5 { visibility: hidden; }
 		}
 
 		&.time-7 {
-			.mid-bar      { visibility: hidden; }
-			.bottom-bar   { visibility: hidden; }
-			.top-left     { visibility: hidden; }
-			.bottom-left  { visibility: hidden; }
+			.segment-2 { visibility: hidden; }
+			.segment-3 { visibility: hidden; }
+			.segment-4 { visibility: hidden; }
+			.segment-6 { visibility: hidden; }
 		}
 
 		&.time-9 {
-			.bottom-left  { visibility: hidden; }
+			.segment-6 { visibility: hidden; }
 		}
 	}
 }
