@@ -1,0 +1,30 @@
+$segment-color: white;
+$segment-off: transparent;
+
+$top-bar-color:      $segment-color;
+$mid-bar-color:      $segment-color;
+$bottom-bar-color:   $segment-color;
+$top-left-color:     $segment-color;
+$bottom-left-color:  $segment-color;
+$top-right-color:    $segment-color;
+$bottom-right-color: $segment-color;
+
+$digit-width: 100px;
+$segment-width: 12px;
+
+@mixin triangle-edges($top, $right, $bottom, $left) {
+    border-top:    $segment-width/2 solid $top;
+    border-right:  $segment-width/2 solid $right;
+    border-left:   $segment-width/2 solid $left;
+    border-bottom: $segment-width/2 solid $bottom;
+}
+
+@mixin set-digit($tb, $mb, $bb, $tl, $bl, $tr, $br) {
+    .top-bar      { background: $tb; }
+    .mid-bar      { background: $mb; }
+    .bottom-bar   { background: $bb; }
+    .top-left     { background: $tl; }
+    .bottom-left  { background: $bl; }
+    .top-right    { background: $tr; }
+    .bottom-right { background: $br; }
+}

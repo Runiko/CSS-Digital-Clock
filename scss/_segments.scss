@@ -4,12 +4,24 @@
   width: $digit-width - (2 * $segment-width);
   height: $segment-width;
   left: $segment-width;
-  background: black;
-  position: absolute; 
+  position: absolute;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -$segment-width;
+    @include triangle-edges(transparent, $segment-color, transparent, transparent);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: -$segment-width;
+    @include triangle-edges(transparent, transparent, transparent, $segment-color);
+  }
 }
 
 .top-bar    { top: 0%; }
-.mid-bar    { top: 47%; }
+.mid-bar    { top: $digit-width - 6 }
 .bottom-bar { bottom: 0; }
 
 .top-left,
@@ -17,25 +29,28 @@
 .bottom-left,
 .bottom-right {
   width: $segment-width;
-  height: 50%;
+  height: $digit-width - (2 * $segment-width);
   position: absolute;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -$segment-width;
+    @include triangle-edges(transparent, transparent, $segment-color, transparent);
+    left: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -$segment-width;
+    @include triangle-edges($segment-color, transparent, transparent, transparent);
+    right: 0;
+  }
+
 }
 
-$radius: 10px;
-.top-left, .top-right { top: 0; }
-.top-left  { left:  0; border-top-left-radius: $radius; }
-.top-right { right: 0; border-top-right-radius: $radius; }
+.top-left, .top-right { top: $segment-width + 3; }
+.bottom-left, .bottom-right { bottom: $segment-width + 3; }
 
-.bottom-left, .bottom-right { bottom: 0; }
-.bottom-left  { left:   0; border-bottom-left-radius: $radius; }
-.bottom-right { right:  0; border-bottom-right-radius: $radius; }
-
-.top-bar,
-.mid-bar,
-.bottom-bar,
-.top-left,
-.top-right,
-.bottom-left,
-.bottom-right {
-  /*border-radius: 10px;*/
-}
+.top-left, .bottom-left  { left:   0; }
+.top-right, .bottom-right { right:  0; }

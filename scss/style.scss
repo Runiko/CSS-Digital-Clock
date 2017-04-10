@@ -1,17 +1,4 @@
-$segment-color: white;
-$segment-off: transparent;
-
-$top-bar-color:      $segment-color;
-$mid-bar-color:      $segment-color;
-$bottom-bar-color:   $segment-color;
-$top-left-color:     $segment-color;
-$bottom-left-color:  $segment-color;
-$top-right-color:    $segment-color;
-$bottom-right-color: $segment-color;
-
-$digit-width: 100px;
-$segment-width: 12px;
-
+@import 'variables';
 @import 'segments';
 @import 'transitions';
 
@@ -23,6 +10,10 @@ body{ background: black; }
 	text-align: center;
 	position: relative;
 	background: $segment-off;
+
+	.segment {
+		background: $segment-color;
+	}
 
 	& > div, & > div + div {
 		margin-right: 20px;
@@ -39,16 +30,48 @@ body{ background: black; }
 		width: $digit-width;
 		position: relative;
 
-		@import 'zero';
-		@import 'one';
-		@import 'two';
-		@import 'three';
-		@import 'four';
-		@import 'five';
-		@import 'six';
-		@import 'seven';
-		@import 'eight';
-		@import 'nine';
+		&.time-0 {
+			.mid-bar      { visibility: hidden; }
+		}
+		&.time-1 {
+			.top-bar      { visibility: hidden; }
+			.mid-bar      { visibility: hidden; }
+			.bottom-bar   { visibility: hidden; }
+			.top-left     { visibility: hidden; }
+			.bottom-left  { visibility: hidden; }
+		}
+		&.time-2 {
+			.top-left     { visibility: hidden; }
+			.bottom-right { visibility: hidden; }
+		}
+		&.time-3 {
+			.top-left     { visibility: hidden; }
+			.bottom-left  { visibility: hidden; }
+		}
+		&.time-4 {
+			.top-bar      { visibility: hidden; }
+			.bottom-bar   { visibility: hidden; }
+			.bottom-left  { visibility: hidden; }
+		}
+		&.time-5 {
+			.bottom-left  { visibility: hidden; }
+			.top-right    { visibility: hidden; }
+		}
+
+		&.time-6 {
+			.top-right { visibility: hidden; }
+		}
+
+		&.time-7 {
+			.mid-bar      { visibility: hidden; }
+			.bottom-bar   { visibility: hidden; }
+			.top-left     { visibility: hidden; }
+			.bottom-left  { visibility: hidden; }
+		}
+
+		&.time-9 {
+			.bottom-left  { visibility: hidden; }
+		}
 	}
 }
 
@@ -57,15 +80,7 @@ body{ background: black; }
 	width: 26px;
 	height: 200px;
 	position: relative;
-	&:before {
-		content: '';
-		position: absolute;
-		width: 18px;
-		height: 18px;
-		background: $segment-color;
-		left: 3px;
-		top: 20%;
-	}
+	&:before,
 	&:after {
 		content: '';
 		position: absolute;
@@ -73,8 +88,9 @@ body{ background: black; }
 		height: 18px;
 		background: $segment-color;
 		left: 3px;
-		top: 70%;
 	}
+	&:before { top: 20%; }
+	&:after  { top: 70%; }
 }
 
 .labels span{
