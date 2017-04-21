@@ -9,7 +9,7 @@
 
 .clock{
 	height: 200px;
-	margin-top: 250px;
+	margin-top: 35vh;
 	text-align: center;
 	position: relative;
 	background: $segment-off;
@@ -29,6 +29,13 @@
 		width: $digit-width;
 		position: relative;
 
+		// .segment-1 -> top-bar
+		// .segment-2 -> mid-bar
+		// .segment-3 -> bottom-bar
+		// .segment-4 -> top-left
+		// .segment-5 -> top-right
+		// .segment-6 -> bottom-left
+		// .segment-7 -> bottom-right
 		&.time-0 {
 			.segment-2 { visibility: hidden; }
 		}

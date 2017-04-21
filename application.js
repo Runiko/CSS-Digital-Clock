@@ -15,11 +15,11 @@ Digit.prototype = {
 	}
 }
 
-let Clock = function () {
+let Clock = function (el) {
 	this.secondsEl = new Digit('seconds');
 	this.minutesEl = new Digit('minutes');
 	this.hoursEl   = new Digit('hours');
-	this.bodyEl = document.getElementById('body');
+	this.bodyEl = document.getElementById(el);
 	this.bodyEl.style.background = this.randomColorBackground();
 	this.update();
 
@@ -53,4 +53,4 @@ Clock.prototype = {
 	}
 }
 
-new Clock();
+new Clock('body');
