@@ -1,5 +1,3 @@
-let militaryTime = true;
-
 let Digit = function(el){
 	this.onesEl = document.getElementById(el + '-ones');
 	this.tensEl = document.getElementById(el + '-tens');
@@ -17,34 +15,42 @@ Digit.prototype = {
 	}
 }
 
-function hexTimeBackground() {
-	return '#' + hours.zeroPad() + minutes.zeroPad() + seconds.zeroPad();
+let Clock = function () {
+	this.secondsEl = new Digit('seconds');
+	this.minutesEl = new Digit('minutes');
+	this.hoursEl   = new Digit('hours');
+	this.bodyEl = document.getElementById('body');
+	this.bodyEl.style.background = this.randomColorBackground();
+	this.update();
+
+	setInterval(() => {
+		this.update();
+	}, 1000);
 }
 
-function randomColorBackground() {
-	return "#" + Math.floor(Math.random()*16777215).toString(16);
-}
+Clock.prototype = {
+	update () {
+		let date = new Date();
+		this.secondsEl.render(date.getSeconds());
+		this.minutesEl.render(date.getMinutes());
+		this.hoursEl.render(this.checkHour(date));
+		if (date.getSeconds() % 5 === 0) {
+			this.bodyEl.style.background = this.randomColorBackground();
+		}
+	},
 
-function checkHour(date) {
-	let currentHour = date.getHours()
-	return militaryTime && (currentHour > 12) ? (currentHour - 12) : currentHour;
-}
+	hexTimeBackground () {
+		return '#' + hoursEl.zeroPad() + minutesEl.zeroPad() + secondsEl.zeroPad();
+	},
 
-function init() {
-	let date = new Date();
-	seconds.render(date.getSeconds());
-	minutes.render(date.getMinutes());
-	hours.render(checkHour(date));
-	if (date.getSeconds() % 5 === 0) {
-		body.style.background = randomColorBackground();
+	randomColorBackground () {
+		return "#" + Math.floor(Math.random()*16777215).toString(16);
+	},
+
+	checkHour (date) {
+		let currentHour = date.getHours();
+		return currentHour > 12 ? currentHour - 12 : currentHour;
 	}
-	setTimeout(init, 1000);
 }
 
-let seconds = new Digit('seconds');
-let minutes = new Digit('minutes');
-let hours   = new Digit('hours');
-let body    = document.getElementById('body');
-body.style.background = randomColorBackground();
-
-init();
+new Clock();
